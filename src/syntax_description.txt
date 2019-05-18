@@ -1,0 +1,91 @@
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+# Syntax Specification for Zarzand Programming Language(hereafter Zpl)
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+/* Important comments
+  * - stands for '0 or more repetitions'
+  + - stands for '1 or more repetitions'
+*/
+
+The source file written in Zpl is divided into main section.
+
+  .STACK
+  .DATA
+  .CODE
+  .MAIN
+
+Zpl will be executed on a virtual machine, therefore we need some
+section to specify VMs parameters. The size of the stack of VM is
+specified in the .STACK section.
+
+.STACK section syntax is the following:
+  .STACK = <size-of-stack>
+  e.g. .STACK = 1024
+
+The next interesting section is the .DATA section.
+It's used to declare entities that are visible in a
+global scope such as variables, arrays and etc.
+
+.DATA section syntax presented below:
+  .DATA |
+    | VarType <var-name>; <-- Uninitialized variables
+    | VarType <var-name> '=' <value>; <-- Initialized variable
+    | VarType <var-name>[ARR_SIZE] = <value>, ... , <value> <-- ARR_SIZE times
+    | VarType <var-name>[] = <value>, ... , <value> <-- ARR_SIZE is determined from value list
+
+VarType can contain the following types
+  VarType = CHAR
+          | BYTE
+          | WORD
+          | DWORD
+          | QWORD
+
+Regarding to the VarType value can satisfy one of the following formats:
+  VarType = CHAR : value = '<character>', where <character> = [a-z]
+                                                            | [A-Z]
+                                                            | [0-9]
+                                                            | [!,@,#,$,%,^,&,*,(,), _, -, \, /, +].
+  Representation of CHAR takes 8 bits.
+
+  VarType = BYTE:  value = '<value>', where <value> is any 8  bit unsigned integer
+
+  VarType = WORD:  value = '<value>', where <value> is any 16 bit unsigned integer
+
+  VarType = DWORD: value = '<value>', where <value> is any 32 bit unsigned integer
+
+  VarType = QWORD: value = '<value>', where <value> is any 64 bit unsigned integer
+
+The next and the main section is the .CODE section.
+.CODE section contains declarations of functions.
+
+The syntax for function declaration is presented below:
+  .CODE |
+      Func <func-name>; <-- Forward Declaration
+    | Func <func-name>:
+        InstructionDecl* |
+        LabelDecl
+      EndFunc
+
+So the function is simply a group of instructions and maybe labels.
+Which are need to be executed.
+
+Every instruction can be uniquely described using its type which coincides with instructions name.
+
+Syntax for instruction declaration is the following:
+  InstrctionDecl:
+    InstrName Ext OpList
+
+  where InstrName = 'NOP' |
+                    'HALT' |
+                    'PRINT' | etc
+
+        Ext = W  <-- Word
+              B  <-- Byte
+              DW <-- Double Word
+              QW <-- Quadro Word
+
+        OpList = Op*
+
+        Op =  RegisterName
+            | VariableName
+

@@ -1,17 +1,30 @@
 #include <iostream>
+#include <string>
+#include <fstream>
+#include <cstdlib>
 
 #include "defs.hpp"
+#include "logger.hpp"
 
-int main()
+void printUsage()
 {
-  uint16_t value = 0;
-  std::cin >> value;
+  std::cout << "Usage: ./czpl <filename>.zpl\n";
+}
 
-  Arg arg;
-  auto variantValue = Arg::ValueType{value};
-  arg.setValue(variantValue);
+int main(int argc, char *argv[])
+{
+  if(argc != 2)
+  {
+    printUsage();
+    exit(1);
+  }
 
-  std::visit(InstructionAdd{}, arg.value_, arg.value_);
-
+  const std::string inputFilename = argv[1];
+  std::fstream inputStream(inputFilename);
+  if(!inputStream.is_open())
+  {
+    Logger::printMessage("Unable to open file " + inputFilename, LogLevel::HIGH);
+  }
+  
   return 0;
 }
