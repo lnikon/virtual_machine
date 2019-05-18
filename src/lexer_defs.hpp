@@ -43,34 +43,53 @@ using ValueType = Extension;
 
 struct Operand
 {
-  QWORD value_{};
+  QWORD       value_{};
   OperandType opType_{OperandType::REG};
-  ValueType valueType_{ValueType::DW};
+  ValueType   valueType_{ValueType::DW};
 };
+using OpList = std::vector<Operand>;
 
 struct Instruction
 {
-  using OpList = std::vector<Operand>;
-
-  std::string name_{};
+  std::string     name_{};
   InstructionType type_{InstructionType::NOP};
-  Extension ex_{Extension::DW};
-  OpList opList_;
+  Extension       ex_{Extension::DW};
+  OpList          opList_;
 };
-
-struct Function
-{
-};
+using InstructionList = std::vector<Instruction>;
 
 struct Label
 {
+  std::string     name_{};
+  InstructionList code_{};
+};
+using LabelList = std::vector<Label>;
+
+struct Function
+{
+  std::string     name_{};
+  InstructionList code_{};
+  LabelList       labels_{};
+  
+  bool isForwardDeclared{false};
 };
 
 struct Variable
 {
+  std::string name_{};
+  QWORD       value_{};
+  ValueType   type_{};
+  
+  bool isInitialized{false};
 };
 
 struct Array
 {
+  std::string         name_{};
+  std::size_t         size_{};
+  std::vector<QWORD>  value_{};
+  ValueType           type_{};
+  
+  bool isInitialized{false};
 };
 
