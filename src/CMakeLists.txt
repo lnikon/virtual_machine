@@ -9,10 +9,24 @@ set(EXEC_NAME "czlp")
 set(SOURCES main.cpp
             defs.hpp
             common.hpp
+            array.hpp
+            extension_defs.hpp
+            function.hpp
+            instruction.hpp
+            label.hpp
+            operand.hpp
+            type_defs.hpp
+            variable.cpp
+            variable.hpp
+            vm.cpp
+            vm.hpp
+            vm_config.hpp
             lexer.cpp
             lexer.hpp
+            lexer_defs.hpp
             parser.cpp
             parser.hpp
+            parser_defs.hpp
             logger.cpp
             logger.hpp)
 

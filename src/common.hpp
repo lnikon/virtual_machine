@@ -5,3 +5,9 @@
 #ifdef DEBUG_MODE
 #include <iostream>
 #endif
+
+#include <cstdint>
+#include <cstdlib>
+
+#include <string>
+#include <vector>

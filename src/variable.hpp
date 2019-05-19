@@ -1,0 +1,29 @@
+#pragma once
+#include "common.hpp"
+#include "type_defs.hpp"
+
+struct Variable
+{
+  std::string name_{};
+  QWORD       value_{};
+  ValueType   type_{};
+  
+  bool isInitialized{false};
+
+  //friend bool operator==(const Variable& var1, const Variable& var2);
+  //friend bool operator!=(const Variable& var1, const Variable& var2);
+
+  static bool areEqual(const Variable& var1, const Variable& var2);
+};
+
+//bool operator==(const Variable& var1, const Variable& var2)
+//{
+  //return Variable::areEqual(var1, var2);
+//}
+
+//bool operator!=(const Variable& var1, const Variable& var2)
+//{
+  //return !(var1 == var2);
+//}
+
+

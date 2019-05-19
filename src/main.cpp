@@ -5,6 +5,7 @@
 
 #include "defs.hpp"
 #include "logger.hpp"
+#include "parser.hpp"
 
 void printUsage()
 {
@@ -20,11 +21,9 @@ int main(int argc, char *argv[])
   }
 
   const std::string inputFilename = argv[1];
-  std::fstream inputStream(inputFilename);
-  if(!inputStream.is_open())
-  {
-    Logger::printMessage("Unable to open file " + inputFilename, LogLevel::HIGH);
-  }
+
+  Parser parser;
+  parser.parse(inputFilename);
   
   return 0;
 }

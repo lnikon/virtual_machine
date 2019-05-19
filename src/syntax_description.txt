@@ -1,10 +1,11 @@
-# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
-# Syntax Specification for Zarzand Programming Language(hereafter Zpl)
-# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+# Language Specification for Zarzand Programming Language(hereafter Zpl)
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
 
-/* Important comments
-  * - stands for '0 or more repetitions'
-  + - stands for '1 or more repetitions'
+/* 
+  Important comments
+  '*' - stands for '0 or more repetitions'
+  '+' - stands for '1 or more repetitions'
 */
 
 The source file written in Zpl is divided into main section.
