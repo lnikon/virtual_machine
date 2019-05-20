@@ -6,13 +6,16 @@ void Logger::printMessage(const std::string& msg, LogLevel lvl)
   switch(lvl)
   {
     case LogLevel::LOW:
-      prefix = "Attention! ";
+      prefix = "\033[1;33mAttention!\033[0m ";
       break;
     case LogLevel::MID:
-      prefix = "Warning! ";
+      prefix = "\033[1;35mWarning!\033[0m ";
       break;
     case LogLevel::HIGH:
-      prefix = "Error! ";
+      prefix = "\033[1;31mError!\033[0m ";
+      break;
+    case LogLevel::DEBUG:
+      prefix = "\033[1;36mDEBUG!\033[0m ";
       break;
     default: 
       break;

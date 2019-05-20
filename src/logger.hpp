@@ -7,7 +7,8 @@ enum class LogLevel
 {
   LOW = 0,
   MID,
-  HIGH
+  HIGH,
+  DEBUG,
 };
 
 struct Logger

@@ -5,6 +5,7 @@
 
 #include "defs.hpp"
 #include "logger.hpp"
+#include "lexer.hpp"
 #include "parser.hpp"
 
 void printUsage()
@@ -24,6 +25,6 @@ int main(int argc, char *argv[])
 
   Parser parser;
   parser.parse(inputFilename);
-  
+
   return 0;
 }

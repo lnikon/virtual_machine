@@ -4,7 +4,6 @@
 
 #include "common.hpp"
 #include "vm_config.hpp"
-#include "variable.hpp"
 #include "extension_defs.hpp"
 #include "type_defs.hpp"
 #include "instruction.hpp"
@@ -12,10 +11,11 @@
 #include "label.hpp"
 #include "function.hpp"
 #include "array.hpp"
+#include "variable.hpp"
 
 struct StackSection
 {
-  std::size_t size_{VM_DEFAULT_STACK_SIZE};
+  std::size_t size_{};
 };
 
 /*

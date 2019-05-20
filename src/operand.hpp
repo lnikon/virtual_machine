@@ -1,5 +1,7 @@
 #pragma once
 
+#include <vector>
+
 #include "common.hpp"
 #include "type_defs.hpp"
 

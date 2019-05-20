@@ -16,6 +16,8 @@ struct Parser
   CodeSection    getCodeSection()  const;
   MainSection    getMainSection()  const;
 
+  static ValueType returnTypeForString(const std::string& type);
+
   private:
   using LexerPtr = std::unique_ptr<Lexer>;
   LexerPtr      pLexer_{nullptr};
@@ -40,5 +42,6 @@ struct Parser
    */
   bool checkDataSection(const DataSection& dataSec)       const;
   bool staticTypeCheck(const DataSection& dataSec)        const;
-  bool isExpessionTypeSupported(ValueType type)  const;
+  bool isExpessionTypeSupported(ValueType type)           const;
+
 };

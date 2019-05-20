@@ -21,7 +21,7 @@ void Parser::parse(const std::string& inputFilename)
   const bool isStackSectionOk = checkStackSection(stackSec);
   if(!isStackSectionOk)
   {
-    Logger::printMessage("StackSection is incorrect. Please review your code\n", LogLevel::HIGH);
+    Logger::printMessage("StackSection is incorrect. Please review your code.\n", LogLevel::HIGH);
     exit(1);
   }
   stackSec_ = stackSec;
@@ -30,7 +30,7 @@ void Parser::parse(const std::string& inputFilename)
   const bool isDataSectionOk = checkDataSection(dataSec);
   if(!isDataSectionOk)
   {
-    Logger::printMessage("DataSection is incorrect. Please review your code\n", LogLevel::HIGH);
+    Logger::printMessage("DataSection is incorrect. Please review your code.\n", LogLevel::HIGH);
     exit(1);
   }
   dataSec_ = dataSec;
@@ -126,5 +126,29 @@ bool Parser::isExpessionTypeSupported(ValueType type) const
     case ValueType::INVALID:
     default:
       return false;
+  }
+}
+
+ValueType Parser::returnTypeForString(const std::string& type)
+{
+  if(type == "CHAR" || type == "BYTE") 
+  {
+    return ValueType::B;
+  }
+  else if(type == "WORD")
+  {
+    return ValueType::W;
+  }
+  else if(type == "DWORD")
+  {
+    return ValueType::DW;
+  }
+  else if(type == "QWORD")
+  {
+    return ValueType::QW;
+  }
+  else
+  {
+    return ValueType::INVALID;
   }
 }
