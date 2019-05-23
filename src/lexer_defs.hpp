@@ -23,3 +23,7 @@ static const std::string STACK_SEC_NAME = ".STACK";
 static const std::string DATA_SEC_NAME  = ".DATA";
 static const std::string CODE_SEC_NAME  = ".CODE";
 static const std::string MAIN_SEC_NAME  = ".MAIN";
+
+// Keywords
+static const std::string FUNCTION_KWRD = "Func";
+static const std::string END_FUNCTION_KWRD = "EndF";

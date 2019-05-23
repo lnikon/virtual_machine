@@ -59,29 +59,29 @@ void find_and_replace(std::string& str,
 {
   std::string::size_type pos = 0u;
   while((pos = str.find(oldStr, pos)) != std::string::npos){
-     str.replace(pos, oldStr.length(), newStr);
-     pos += newStr.length();
+    str.replace(pos, oldStr.length(), newStr);
+    pos += newStr.length();
   }
 }
 
 //! Tokenize the given string str with given delimiter. If no delimiter is given whitespace is used.
 void tokenize(const std::string& str, std::vector<std::string>& tokens, const std::string& delimiters = " ")
 {
-   tokens.clear();
-   // Skip delimiters at beginning.
-   std::string::size_type lastPos = str.find_first_not_of(delimiters, 0);
-   // Find first "non-delimiter".
-   std::string::size_type pos     = str.find_first_of(delimiters, lastPos);
+  tokens.clear();
+  // Skip delimiters at beginning.
+  std::string::size_type lastPos = str.find_first_not_of(delimiters, 0);
+  // Find first "non-delimiter".
+  std::string::size_type pos     = str.find_first_of(delimiters, lastPos);
 
-   while (std::string::npos != pos || std::string::npos != lastPos)
-   {
-	// Found a token, add it to the vector.
-	tokens.push_back(str.substr(lastPos, pos - lastPos));
-	// Skip delimiters.  Note the "not_of"
-	lastPos = str.find_first_not_of(delimiters, pos);
-	// Find next "non-delimiter"
-	pos = str.find_first_of(delimiters, lastPos);
-   }
+  while (std::string::npos != pos || std::string::npos != lastPos)
+  {
+    // Found a token, add it to the vector.
+    tokens.push_back(str.substr(lastPos, pos - lastPos));
+    // Skip delimiters.  Note the "not_of"
+    lastPos = str.find_first_not_of(delimiters, pos);
+    // Find next "non-delimiter"
+    pos = str.find_first_of(delimiters, lastPos);
+  }
 }
 
 std::string convertBoolToString(const bool value)
@@ -112,5 +112,5 @@ std::string convertVectorOfStringToString(const std::vector<std::string>& string
 
 bool starts_with(const std::string& line, const std::string& prefix)
 {
-   return (line.rfind(prefix, 0) == 0);
+  return (line.rfind(prefix, 0) == 0);
 }
