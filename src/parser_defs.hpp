@@ -26,13 +26,16 @@ struct DataSection
   void insertVariable(const std::string& name, const Variable& var) {}
   const Variable& getVariable(const std::string& name) {}
   bool variableExists(const std::string& name) {}
-  bool variableExists(const Variable& name) {}
+
+  void insertArray(const std::string& name, const Array& var) {}
+  const Array& getArray(const std::string& name) {}
+  bool arrayExists(const std::string& name) {}
 
   std::vector<Variable> getVariablesVector() const 
   {
     std::vector<Variable> vars;
 
-    for(const auto var : variableMap)
+    for(const auto var : variableMap_)
     {
       vars.push_back(var.second);
     }
@@ -40,12 +43,25 @@ struct DataSection
     return vars;
   }
 
+  std::vector<Array> getArraysVector() const 
+  {
+    std::vector<Array> arrs;
+
+    for(const auto arr : arrayMap_)
+    {
+      arrs.push_back(arr.second);
+    }
+
+    return arrs;
+  }
+
   private:
-  std::unordered_map<std::string, Variable> variableMap;  
+  std::unordered_map<std::string, Variable> variableMap_;  
+  std::unordered_map<std::string, Array>    arrayMap_;  
 };
 
 /*
- * TODO: Pack into VariableEnvirnoment
+ * TODO: Pack into FunctionEnvirnoment
  */
 struct CodeSection
 {

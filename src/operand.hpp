@@ -17,7 +17,7 @@ struct Operand
 {
   QWORD       value_{};
   OperandType opType_{OperandType::REG};
-  ValueType   valueType_{ValueType::DW};
+  ValueType   valueType_{ValueType::DWORD};
 };
 using OpList = std::vector<Operand>;
 

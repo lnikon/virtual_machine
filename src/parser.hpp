@@ -17,6 +17,7 @@ struct Parser
   MainSection    getMainSection()  const;
 
   static ValueType returnTypeForString(const std::string& type);
+  static std::string returnStringForType(const ValueType type);
 
   private:
   using LexerPtr = std::unique_ptr<Lexer>;

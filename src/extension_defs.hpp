@@ -5,9 +5,10 @@
 enum class Extension 
 {
   INVALID = 0,
-  B   = sizeof(uint8_t),
-  W   = sizeof(uint16_t),
-  DW  = sizeof(uint32_t),
-  QW  = sizeof(uint64_t),
+  CHAR,
+  BYTE,
+  WORD,
+  DWORD,
+  QWORD,
 };
 

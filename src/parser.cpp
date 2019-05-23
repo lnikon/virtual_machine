@@ -118,10 +118,11 @@ bool Parser::isExpessionTypeSupported(ValueType type) const
 {
   switch(type)
   {
-    case ValueType::B:
-    case ValueType::W:
-    case ValueType::DW:
-    case ValueType::QW:
+    case ValueType::CHAR:
+    case ValueType::BYTE:
+    case ValueType::WORD:
+    case ValueType::DWORD:
+    case ValueType::QWORD:
       return true;
     case ValueType::INVALID:
     default:
@@ -131,24 +132,48 @@ bool Parser::isExpessionTypeSupported(ValueType type) const
 
 ValueType Parser::returnTypeForString(const std::string& type)
 {
-  if(type == "CHAR" || type == "BYTE") 
+  if(type == "CHAR")
   {
-    return ValueType::B;
+    return ValueType::CHAR;
+  }
+  else if(type == "BYTE") 
+  {
+    return ValueType::BYTE;
   }
   else if(type == "WORD")
   {
-    return ValueType::W;
+    return ValueType::WORD;
   }
   else if(type == "DWORD")
   {
-    return ValueType::DW;
+    return ValueType::DWORD;
   }
   else if(type == "QWORD")
   {
-    return ValueType::QW;
+    return ValueType::QWORD;
   }
   else
   {
     return ValueType::INVALID;
+  }
+}
+
+std::string Parser::returnStringForType(const ValueType type)
+{
+  switch(type)
+  {
+    case ValueType::CHAR:
+      return std::string{"CHAR"};
+    case ValueType::BYTE:
+      return std::string{"BYTE"};
+    case ValueType::WORD:
+      return std::string{"WORD"};
+    case ValueType::DWORD:
+      return std::string{"DWORD"};
+    case ValueType::QWORD:
+      return std::string{"QWORD"};
+    case ValueType::INVALID:
+    default:
+      return std::string{"INVALID"};
   }
 }
