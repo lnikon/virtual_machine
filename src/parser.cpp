@@ -26,6 +26,16 @@ void Parser::parse(const std::string& inputFilename)
   }
   stackSec_ = stackSec;
 
+  inputStream.close();
+  inputStream.clear();
+  inputStream.seekg(0, std::ios::beg);
+  inputStream.open(inputFilename);
+  if(!inputStream.is_open())
+  {
+    Logger::printMessage("Unable to open file " + inputFilename, LogLevel::HIGH);
+    exit(1);
+  }
+
   DataSection dataSec = pLexer_->parseDataSection(inputStream);
   const bool isDataSectionOk = checkDataSection(dataSec);
   if(!isDataSectionOk)
@@ -35,8 +45,38 @@ void Parser::parse(const std::string& inputFilename)
   }
   dataSec_ = dataSec;
 
+  inputStream.close();
+  inputStream.clear();
+  inputStream.seekg(0, std::ios::beg);
+  inputStream.open(inputFilename);
+  if(!inputStream.is_open())
+  {
+    Logger::printMessage("Unable to open file " + inputFilename, LogLevel::HIGH);
+    exit(1);
+  }
+
   CodeSection codeSec = pLexer_->parseCodeSection(inputStream);
   codeSec_ = codeSec;
+
+  inputStream.close();
+  inputStream.clear();
+  inputStream.seekg(0, std::ios::beg);
+  inputStream.open(inputFilename);
+  if(!inputStream.is_open())
+  {
+    Logger::printMessage("Unable to open file " + inputFilename, LogLevel::HIGH);
+    exit(1);
+  }
+
+  inputStream.close();
+  inputStream.clear();
+  inputStream.seekg(0, std::ios::beg);
+  inputStream.open(inputFilename);
+  if(!inputStream.is_open())
+  {
+    Logger::printMessage("Unable to open file " + inputFilename, LogLevel::HIGH);
+    exit(1);
+  }
 
   MainSection mainSec = pLexer_->parseMainSection(inputStream);
   mainSec_ = mainSec;

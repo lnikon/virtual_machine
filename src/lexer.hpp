@@ -16,10 +16,13 @@ struct Lexer
 
   private:
   std::size_t lineNumber_{0};
+  std::size_t functionCount_{0};
   //StackSection  stackSec_{};
   //DataSection   dataSec_{};
   //CodeSection   codeSec_{};
   //MainSection   mainSec_{};
+
+  bool checkCorrectKeyword(const std::string& line);
 
   /*
    * Stack section parsing routines
@@ -52,9 +55,9 @@ struct Lexer
   /*
    * Code section parsing routines
    */
-  bool                            parseFunction(CodeSection& rCodeSec, std::fstream& inputStream);
-  std::pair<bool, std::string>    getFunctionName(const std::string& line);
-  bool                            isFunctionDeclaration(const std::string& line);
+  bool                                          parseFunction(CodeSection& rCodeSec, std::fstream& inputStream);
+  std::pair<bool, std::string>                  getFunctionName(const std::string& line);
+  std::pair<bool, std::vector<std::string>>     isFunctionDeclaration(const std::string& line);
 
   // void parseInstruction();
 
