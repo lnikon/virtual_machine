@@ -55,10 +55,12 @@ struct Lexer
   /*
    * Code section parsing routines
    */
-  bool                                          parseFunction(CodeSection& rCodeSec, std::fstream& inputStream);
   std::pair<bool, std::string>                  getFunctionName(const std::string& line);
-  std::pair<bool, std::vector<std::string>>     isFunctionDeclaration(const std::string& line);
-
+  std::pair<bool, std::string>                  isFunctionDeclaration(const std::string& line);
+  void                                          parseFunctionBody(std::fstream& inputStream, Function& rFunc);
+  std::pair<bool, Label>                        isLabel(const std::string& line);
+  std::pair<bool, Instruction>                  isInstruction(const std::string& line);
+  bool                                          endOfFunctionDecl(const std::string& line);
   // void parseInstruction();
 
   /*

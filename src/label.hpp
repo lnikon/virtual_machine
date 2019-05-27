@@ -5,8 +5,8 @@
 
 struct Label
 {
-  std::string     name_{};
-  InstructionList code_{};
+  std::string       name_{};
+  std::size_t       instrIndex_{}; 
 };
 using LabelList = std::vector<Label>;
 

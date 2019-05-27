@@ -1,0 +1,10 @@
+.STACK = 512
+.DATA:
+#CHAR ch = 'A'
+#WORD arr[12]
+#QWORD arr1[] = 43, 23, 54
+
+.CODE:
+    Func funcName:
+        lbl1:
+    EndF
