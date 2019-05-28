@@ -26,6 +26,6 @@ VPI/PLI or on SystemVerilog and make connection via DPI
 
 `git clone https://github.com/lnikon/virtual_machine && cd virtual_machine`
 
-`mkdir build && build`
+`mkdir build && cd build`
 
 `cmake .. && make`
