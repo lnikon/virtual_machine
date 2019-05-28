@@ -8,13 +8,13 @@
 # ToDo List:
 * Instruction set isn't implemented yet.
 * Improve debugging messages
-..* Add support for turning ON/OFF colors
-..* Add support for file-based logs
+  * Add support for turning ON/OFF colors
+  * Add support for file-based logs
 
 * Name checking
-..* Add support for name redifinition check
-..* Control access to undefined names
+  * Add support for name redifinition check
+  * Control access to undefined names
 
 * PLI/VPI or DPI support
-..* Consider to implement CPU on Verilog and connect it our virtual machine via
+  * Consider to implement CPU on Verilog and connect it our virtual machine via
 VPI/PLI or on SystemVerilog and make connection via DPI
