@@ -130,19 +130,15 @@ DataSection Lexer::parseDataSection(std::fstream& inputStream)
     bool isDataSectionOk = false;
     bool isDataSectionPresent = false;
 
-    std::streampos currentPos;
-    std::streampos oldPos;
 
     while(!isDataSectionPresent && std::getline(inputStream, line))
     {
         lineNumber_++;
-        currentPos = inputStream.tellg();
 
         line = trim_copy(line);
 
         if(line.empty())
         {
-            // oldPos = currentPos;
             continue;
         }
 
@@ -151,7 +147,6 @@ DataSection Lexer::parseDataSection(std::fstream& inputStream)
         // else, read the next line
         const auto dataSectionPos = line.find(DATA_SEC_NAME);
         isDataSectionPresent = (dataSectionPos != std::string::npos);
-        // break;
     }
 
     if(isDataSectionPresent)
@@ -159,13 +154,11 @@ DataSection Lexer::parseDataSection(std::fstream& inputStream)
         while(!isDataSectionOk && std::getline(inputStream, line))
         {
             lineNumber_++;
-            currentPos = inputStream.tellg();
 
             line = trim_copy(line);
 
             if(line.empty() || starts_with(line, "#"))
             {
-                oldPos = currentPos; 
                 continue; 
             }
 
@@ -830,7 +823,7 @@ std::pair<bool, Label> Lexer::isLabel(const std::string& line)
 std::pair<bool, Instruction> Lexer::isInstruction(const std::string& line)
 {
     bool isInstr = false;
-
+    
     return std::make_pair(isInstr, Instruction{});
 }
 
