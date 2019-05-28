@@ -4,10 +4,6 @@
 #include "extension_defs.hpp"
 #include "operand.hpp"
 
-/* Instruction names */
-const std::string NOP_INSTR_NAME = "NOP";
-const std::string ADD_INSTR_NAME = "ADD";
-
 /* Supported instructions */
 enum class InstructionType 
 {

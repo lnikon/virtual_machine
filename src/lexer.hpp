@@ -17,11 +17,10 @@ struct Lexer
   private:
   std::size_t lineNumber_{0};
   std::size_t functionCount_{0};
-  //StackSection  stackSec_{};
-  //DataSection   dataSec_{};
-  //CodeSection   codeSec_{};
-  //MainSection   mainSec_{};
 
+  /*
+   * Name checking utilities.
+   */
   bool checkCorrectKeyword(const std::string& line);
 
   /*
@@ -41,12 +40,12 @@ struct Lexer
   ValueType                     getSpecifiedType(const std::string& line);
   std::string                   getArrayName(const std::string& line);
   std::string                   getVariableName(const std::string& line);
-  
-  std::pair<bool, std::vector<std::string>>
-                                getArrayValueForLexer(const std::string& line);
 
   std::pair<bool, std::vector<std::string>>
-                                getStringValueForLexer(const std::string& line);
+    getArrayValueForLexer(const std::string& line);
+
+  std::pair<bool, std::vector<std::string>>
+    getStringValueForLexer(const std::string& line);
 
   std::pair<bool, char>         getCharValueForLexer(const std::string& line);
 
@@ -60,8 +59,10 @@ struct Lexer
   void                                          parseFunctionBody(std::fstream& inputStream, Function& rFunc);
   std::pair<bool, Label>                        isLabel(const std::string& line);
   std::pair<bool, Instruction>                  isInstruction(const std::string& line);
+  std::pair<bool, InstructionType>              isInstructionType(const std::string& token);
+  std::pair<bool, Extension>                    isExtension(const std::string& token);
+  std::pair<bool, OpList>                       isOperandList(const std::string& token);
   bool                                          endOfFunctionDecl(const std::string& line);
-  // void parseInstruction();
 
   /*
    * Main section parsing routines

@@ -7,6 +7,7 @@
 #include "logger.hpp"
 #include "lexer.hpp"
 #include "parser.hpp"
+#include "instruction_envirnoment.hpp"
 
 void printUsage()
 {

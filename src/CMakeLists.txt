@@ -15,6 +15,8 @@ set(SOURCES main.cpp
             extension_defs.hpp
             function.hpp
             instruction.hpp
+            instruction_envirnoment.hpp
+            instruction_envirnoment.cpp
             label.hpp
             operand.hpp
             type_defs.hpp

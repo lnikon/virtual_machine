@@ -827,16 +827,33 @@ std::pair<bool, Instruction> Lexer::isInstruction(const std::string& line)
     return std::make_pair(isInstr, Instruction{});
 }
 
+
+std::pair<bool, InstructionType> Lexer::isInstructionType(const std::string& token)
+{
+
+  return std::make_pair(false, InstructionType::NOP);
+}
+
+std::pair<bool, Extension> Lexer::isExtension(const std::string& token)
+{
+  return std::make_pair(false, Extension::DWORD);
+}
+
+std::pair<bool, OpList> Lexer::isOperandList(const std::string& token)
+{
+  return std::make_pair(false, OpList{});
+}
+
 bool Lexer::endOfFunctionDecl(const std::string& line)
 {
-    return !(line.compare(END_FUNCTION_KWRD));
+  return !(line.compare(END_FUNCTION_KWRD));
 }
 
 MainSection Lexer::parseMainSection(std::fstream& inputStream)
 {
-    MainSection mainSec;
+  MainSection mainSec;
 
-    return mainSec;
+  return mainSec;
 }
 
 void Lexer::parseMainFunction(MainSection& rMainSec)
