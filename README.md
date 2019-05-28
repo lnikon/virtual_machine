@@ -18,3 +18,14 @@
 * PLI/VPI or DPI support
   * Consider to implement CPU on Verilog and connect it our virtual machine via
 VPI/PLI or on SystemVerilog and make connection via DPI
+
+* List will be continued later...
+
+# How to Build
+`cd ~`
+
+`git clone https://github.com/lnikon/virtual_machine && cd virtual_machine`
+
+`mkdir build && build`
+
+`cmake .. && make`
