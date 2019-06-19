@@ -5,6 +5,7 @@
 
 #include "common.hpp"
 #include "parser_defs.hpp"
+#include "code_section_parser.hpp"
 
 struct Lexer
 {
@@ -15,13 +16,18 @@ struct Lexer
   MainSection  parseMainSection(std::fstream& inputStream);
 
   private:
+  /*
+   * Parsers for general sections
+   */
+  CodeSectionParser codeSectionParser_{};
+
   std::size_t lineNumber_{0};
   std::size_t functionCount_{0};
 
   /*
    * Name checking utilities.
    */
-  bool checkCorrectKeyword(const std::string& line);
+//  bool checkCorrectKeyword(const std::string& line);
 
   /*
    * Stack section parsing routines
@@ -50,19 +56,6 @@ struct Lexer
   std::pair<bool, char>         getCharValueForLexer(const std::string& line);
 
   std::pair<bool, std::size_t>  getArraySize(const std::string& line);
-
-  /*
-   * Code section parsing routines
-   */
-  std::pair<bool, std::string>                  getFunctionName(const std::string& line);
-  std::pair<bool, std::string>                  isFunctionDeclaration(const std::string& line);
-  void                                          parseFunctionBody(std::fstream& inputStream, Function& rFunc);
-  std::pair<bool, Label>                        isLabel(const std::string& line);
-  std::pair<bool, Instruction>                  isInstruction(const std::string& line);
-  std::pair<bool, InstructionType>              isInstructionType(const std::string& token);
-  std::pair<bool, Extension>                    isExtension(const std::string& token);
-  std::pair<bool, OpList>                       isOperandList(const std::string& token);
-  bool                                          endOfFunctionDecl(const std::string& line);
 
   /*
    * Main section parsing routines

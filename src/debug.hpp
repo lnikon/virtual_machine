@@ -44,7 +44,7 @@ inline void printArray(const Array& array)
     + "\n" 
     + padding 
     + "isSizeSpecified_ = " 
-    + convertBoolToString(array.isSizeSpecified_) 
+    + utility::convertBoolToString(array.isSizeSpecified_)
 
     + "\n" 
     + padding 
@@ -59,7 +59,7 @@ inline void printArray(const Array& array)
     + "\n" 
     + padding 
     + "valueFromLexer_ = "
-    + convertVectorOfStringToString(array.valueFromLexer_) 
+    + utility::convertVectorOfStringToString(array.valueFromLexer_)
 
     + postfix;
 

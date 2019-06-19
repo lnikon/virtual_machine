@@ -57,7 +57,6 @@ InstructionEnvirnoment::InstructionEnvirnoment() noexcept
   supportedInstructionsNames_.insert({IDIV_INSTR_NAME,    InstructionType::IDIV});
   supportedInstructionsNames_.insert({NEG_INSTR_NAME,     InstructionType::NEG});
   supportedInstructionsNames_.insert({CAST_INSTR_NAME,    InstructionType::CAST});
-
 }
 
 InstructionEnvirnoment::ResultType

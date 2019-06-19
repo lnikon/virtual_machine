@@ -9,117 +9,117 @@
 
 #define DEBUG_MODE
 
-bool Lexer::checkCorrectKeyword(const std::string& line)
-{
-    if(line.empty())
-    {
-        return false;
-    }
+//bool Lexer::checkCorrectKeyword(const std::string& line)
+//{
+//  if(line.empty())
+//  {
+//    return false;
+//  }
 
-    if(!std::isalpha(line[0]))
-    {
-        return false;
-    }
+//  if(!std::isalpha(line[0]))
+//  {
+//    return false;
+//  }
 
-    for(std::size_t i = 0; i < line.size(); i++)
-    {
-        const unsigned char ch = static_cast<unsigned char>(line[i]);
-        if(!std::isalnum(ch) && ch != '_')
-        {
-            return false;
-        }
-    }
+//  for(std::size_t i = 0; i < line.size(); i++)
+//  {
+//    const unsigned char ch = static_cast<unsigned char>(line[i]);
+//    if(!std::isalnum(ch) && ch != '_')
+//    {
+//      return false;
+//    }
+//  }
 
-    return true;
-}
+//  return true;
+//}
 
 StackSection Lexer::parseStackSection(std::fstream& inputStream)
 {
-    StackSection stackSec;
+  StackSection stackSec;
 
-    bool isStackSizeOk = false;
-    auto line = std::string{};
+  bool isStackSizeOk = false;
+  auto line = std::string{};
 
-    while(!isStackSizeOk && std::getline(inputStream, line))
+  while(!isStackSizeOk && std::getline(inputStream, line))
+  {
+    lineNumber_++;
+
+    line = utility::trim_copy(line);
+
+    if(line.empty())
     {
-        lineNumber_++;
-
-        line = trim_copy(line);
-
-        if(line.empty())
-        {
-            continue;
-        }
-
-        isStackSizeOk = parseStackSize(stackSec, line);
+      continue;
     }
 
-    // If stack size hasn't been specified,
-    // then set it to the default value
-    if(!isStackSizeOk)
-    {
-        setDefaultStackSize(stackSec);
-    }
+    isStackSizeOk = parseStackSize(stackSec, line);
+  }
 
-    // Some debugging :)
-    printStackSection(stackSec);
+  // If stack size hasn't been specified,
+  // then set it to the default value
+  if(!isStackSizeOk)
+  {
+    setDefaultStackSize(stackSec);
+  }
 
-    return stackSec;
+  // Some debugging :)
+  printStackSection(stackSec);
+
+  return stackSec;
 }
 
 bool Lexer::parseStackSize(StackSection& rStackSec, std::string line)
 {
-    bool isStackSizeOk = false;
+  bool isStackSizeOk = false;
 
-    const std::size_t posOfStack = line.find(STACK_SEC_NAME);  
-    if(posOfStack != std::string::npos)
+  const std::size_t posOfStack = line.find(STACK_SEC_NAME);  
+  if(posOfStack != std::string::npos)
+  {
+    // Check assignment sign
+    const std::size_t assignPos = line.find("=");
+    if(assignPos == std::string::npos)
     {
-        // Check assignment sign
-        const std::size_t assignPos = line.find("=");
-        if(assignPos == std::string::npos)
-        {
-            Logger::printMessage("Syntax error on line " 
-                    + std::to_string(lineNumber_) 
-                    + ". Missing assignment sign\n", LogLevel::HIGH);
-            isStackSizeOk = false;
-            exit(1);
-        }
+      Logger::printMessage("Syntax error on line " 
+          + std::to_string(lineNumber_) 
+          + ". Missing assignment sign\n", LogLevel::HIGH);
+      isStackSizeOk = false;
+      exit(1);
+    }
 
-        // Parse value of the stack size
-        const auto stackSizeValueStr = trim_copy(line.substr(assignPos + 1, line.size() - assignPos));
-        if(stackSizeValueStr.empty())
-        {
-            Logger::printMessage("Syntax error on line " 
-                    + std::to_string(lineNumber_) 
-                    + ". Missing stack size value\n", LogLevel::HIGH);
-            isStackSizeOk = false;
-            exit(1);
-        }
+    // Parse value of the stack size
+    const auto stackSizeValueStr = utility::trim_copy(line.substr(assignPos + 1, line.size() - assignPos));
+    if(stackSizeValueStr.empty())
+    {
+      Logger::printMessage("Syntax error on line " 
+          + std::to_string(lineNumber_) 
+          + ". Missing stack size value\n", LogLevel::HIGH);
+      isStackSizeOk = false;
+      exit(1);
+    }
 
-        bool isStackSizeValueCorrectNumber = is_number(stackSizeValueStr);
-        if(!isStackSizeValueCorrectNumber)
-        {
-            Logger::printMessage("Syntax error on line " 
-                    + std::to_string(lineNumber_) 
-                    + ". Stack size value should be non-negative integer\n", LogLevel::HIGH);
-            isStackSizeOk = false;
-            exit(1);
-        }
+    bool isStackSizeValueCorrectNumber = utility::is_number(stackSizeValueStr);
+    if(!isStackSizeValueCorrectNumber)
+    {
+      Logger::printMessage("Syntax error on line " 
+          + std::to_string(lineNumber_) 
+          + ". Stack size value should be non-negative integer\n", LogLevel::HIGH);
+      isStackSizeOk = false;
+      exit(1);
+    }
 
-        const auto stackSizeValueNum = std::stol(stackSizeValueStr);
-        isStackSizeOk = true;
-        rStackSec.size_ = stackSizeValueNum;
-    }  
+    const auto stackSizeValueNum = std::stol(stackSizeValueStr);
+    isStackSizeOk = true;
+    rStackSec.size_ = stackSizeValueNum;
+  }  
 
-    return isStackSizeOk;
+  return isStackSizeOk;
 }
 
 void Lexer::setDefaultStackSize(StackSection& rStackSec)
 {
-    Logger::printMessage("Value for stack size didn\'t specified. Defaulting to " + 
-            std::to_string(VM_DEFAULT_STACK_SIZE) + ".\n", LogLevel::MID);
+  Logger::printMessage("Value for stack size didn\'t specified. Defaulting to " + 
+      std::to_string(VM_DEFAULT_STACK_SIZE) + ".\n", LogLevel::MID);
 
-    rStackSec.size_ = VM_DEFAULT_STACK_SIZE;
+  rStackSec.size_ = VM_DEFAULT_STACK_SIZE;
 }
 
 DataSection Lexer::parseDataSection(std::fstream& inputStream)
@@ -135,7 +135,7 @@ DataSection Lexer::parseDataSection(std::fstream& inputStream)
     {
         lineNumber_++;
 
-        line = trim_copy(line);
+        line = utility::trim_copy(line);
 
         if(line.empty())
         {
@@ -155,15 +155,15 @@ DataSection Lexer::parseDataSection(std::fstream& inputStream)
         {
             lineNumber_++;
 
-            line = trim_copy(line);
+            line = utility::trim_copy(line);
 
-            if(line.empty() || starts_with(line, "#"))
+            if(line.empty() || utility::starts_with(line, "#"))
             {
                 continue; 
             }
 
-            const bool isCodeSegment = starts_with(line, CODE_SEC_NAME);
-            const bool isMainSegment = starts_with(line, MAIN_SEC_NAME);
+            const bool isCodeSegment = utility::starts_with(line, CODE_SEC_NAME);
+            const bool isMainSegment = utility::starts_with(line, MAIN_SEC_NAME);
             if(isCodeSegment || isMainSegment)
             {
                 break;
@@ -260,7 +260,7 @@ void Lexer::parseArray(DataSection& rDataSec, std::string line)
     array.size_ = size;
     array.isSizeSpecified_ = isSizeSpecified;
 
-    // Parse array value
+  // Parse array value
   // If the array type is CHAR[] then interpret is as a 'string',
   // otherwise as a regular array 
   const auto typeStr = Parser::returnStringForType(array.type_);
@@ -332,7 +332,7 @@ std::string Lexer::isTypeSpecified(const std::string& line)
   if(posOfSpaceBetweenTypeAndName != std::string::npos)
   {
     arrayType = line.substr(0, posOfSpaceBetweenTypeAndName);
-    arrayType = trim_copy(arrayType);
+    arrayType = utility::trim_copy(arrayType);
 
     if(arrayType.empty())
     {
@@ -358,7 +358,7 @@ std::string Lexer::getArrayName(const std::string& line)
   const auto nameEnd = line.find_first_of("[") - 1;
 
   auto arrayName = line.substr(nameStart, nameEnd - nameStart + 1);
-  arrayName = trim_copy(arrayName);
+  arrayName = utility::trim_copy(arrayName);
 
   if(arrayName.empty())
   {
@@ -377,7 +377,7 @@ std::string Lexer::getVariableName(const std::string& line)
   const auto nameEnd = line.find_first_of("=") - 1;
 
   auto variableName = line.substr(nameStart, nameEnd - nameStart + 1);
-  variableName = trim_copy(variableName);
+  variableName = utility::trim_copy(variableName);
 
   if(variableName.empty())
   {
@@ -405,7 +405,7 @@ std::pair<bool, std::vector<std::string>> Lexer::getArrayValueForLexer(const std
   const auto valueStart = offset + 1;
 
   std::string valueStr = line.substr(valueStart, line.size() - valueStart); 
-  valueStr = trim_copy(valueStr);
+  valueStr = utility::trim_copy(valueStr);
 
   if(isAssignSignPresent && valueStr.empty())
   {
@@ -424,10 +424,10 @@ std::pair<bool, std::vector<std::string>> Lexer::getArrayValueForLexer(const std
     exit(1);
   }
 
-  tokenize(valueStr, values);
+  utility::tokenize(valueStr, values);
   for(auto& value : values)
   {
-    value = trim_copy(value);
+    value = utility::trim_copy(value);
   }
 
   const std::size_t commaCount = std::count(valueStr.begin(), valueStr.end(), ',');;
@@ -480,7 +480,7 @@ Lexer::getStringValueForLexer(const std::string& line)
   const auto valueStart = offset + 1;
 
   std::string valueStr = line.substr(valueStart, valueEnd - valueStart); 
-  valueStr = trim_copy(valueStr);
+  valueStr = utility::trim_copy(valueStr);
 
   result.push_back(valueStr);
 
@@ -564,11 +564,11 @@ std::pair<bool, std::size_t> Lexer::getArraySize(const std::string& line)
   const std::size_t endOfSize   = line.find_first_of("]") - 1;
 
   std::string sizeStr = line.substr(startOfSize, endOfSize - startOfSize + 1);
-  sizeStr = trim_copy(sizeStr);
+  sizeStr = utility::trim_copy(sizeStr);
 
   if(!sizeStr.empty())
   {
-    if(!is_number(sizeStr))
+    if(!utility::is_number(sizeStr))
     {
       Logger::printMessage("Syntax error on line " 
           + std::to_string(lineNumber_) 
@@ -587,266 +587,13 @@ static int counter = 0;
 
 CodeSection Lexer::parseCodeSection(std::fstream& inputStream)
 {
-  CodeSection codeSec;
+  codeSectionParser_.setLineNumber(lineNumber_);
 
-  bool isCodeSectionPresent   = false;
-  bool isCodeSectionOk        = false;
-  auto line = std::string{};
+  CodeSection codeSec = std::move(codeSectionParser_.parse(inputStream));
 
-  while(!isCodeSectionPresent && std::getline(inputStream, line))
-  {
-    lineNumber_++;
-
-    line = trim_copy(line);
-
-    if(line.empty())
-    {
-      continue;
-    }
-
-    // If section .DATA doesn't present, 
-    // then start processing of the .CODE section
-    // else, read the next line
-    const auto codeSectionPos = line.find(CODE_SEC_NAME);
-    isCodeSectionPresent = (codeSectionPos != std::string::npos);
-  }
-
-  if(!isCodeSectionPresent)
-  {
-    Logger::printMessage("Syntax error on line " 
-        + std::to_string(lineNumber_) 
-        + ". CODE section should contain at least one function for the main.\n", LogLevel::HIGH);
-    exit(1);
-  }
-
-  while(!isCodeSectionOk && std::getline(inputStream, line))
-  {
-    lineNumber_++;
-
-    line = trim_copy(line);
-
-    if(line.empty() || starts_with(line, "#"))
-    {
-      continue; 
-    }
-
-    const bool isMainSection = starts_with(line, MAIN_SEC_NAME);
-    if(isMainSection)
-    {
-      break;
-    }
-
-    auto name = getFunctionName(line);
-    // TODO: Check for function name redifinition.
-    Function func;
-
-    parseFunctionBody(inputStream, func);
-  }
+  lineNumber_ = codeSectionParser_.getLineNumber();
 
   return codeSec;
-}
-
-std::pair<bool, std::string> Lexer::getFunctionName(const std::string& line)
-{
-    auto [isFuncDecl, funcName] = isFunctionDeclaration(line);
-    if(!isFuncDecl && functionCount_ < 1)
-    {
-        Logger::printMessage("Syntax error on line " 
-                + std::to_string(lineNumber_) 
-                + ". Function declaration parsing failed.\n", LogLevel::HIGH);
-        exit(1);
-    }
-
-    return std::make_pair(isFuncDecl, funcName);
-}
-
-std::pair<bool, std::string> Lexer::isFunctionDeclaration(const std::string& line)
-{
-    bool startWithFunctionKeyword = starts_with(line, FUNCTION_KWRD);
-    if(!startWithFunctionKeyword)
-    {
-        Logger::printMessage("Syntax error on line " 
-                + std::to_string(lineNumber_) 
-                + ". CODE section should start with function declaration.\n", LogLevel::HIGH);
-        exit(1);
-    }
-
-    std::vector<std::string> tokens;
-    tokenize(line, tokens);
-    for(auto& token : tokens)
-    {
-        token = trim_copy(token);
-    }
-
-    if(tokens.size() > 3)
-    {
-        Logger::printMessage("Syntax error on line " 
-                + std::to_string(lineNumber_) 
-                + ". Too many tokens in function declaration.\n", LogLevel::HIGH);
-        exit(1);
-    }
-
-    if(tokens.size() < 2)
-    {
-        Logger::printMessage("Syntax error on line " 
-                + std::to_string(lineNumber_) 
-                + ". Missing function name.\n", LogLevel::HIGH);
-        exit(1);
-    }
-
-    auto funcName = tokens[1];
-    funcName = trim_copy(funcName);
-
-    if(funcName[funcName.size() - 1] == ':')
-    {
-       funcName = funcName.substr(0, funcName.size() - 1);
-    }
-
-    if(!checkCorrectKeyword(funcName))
-    {
-
-        Logger::printMessage("Syntax error on line " 
-                + std::to_string(lineNumber_) 
-                + ". Missing function name.\n", LogLevel::HIGH);
-        exit(1);
-
-    }
-
-    const bool isFuncDecl = startWithFunctionKeyword && ((tokens.size() == 2) || (tokens.size() == 3));
-    // std::cout << "startWithFunctionKeyword: " << std::boolalpha << startWithFunctionKeyword << std::endl;
-    // std::cout << "isFuncDecl: " << std::boolalpha << isFuncDecl << std::endl;
-    // std::cout << "tokens.size: " << tokens.size() << std::endl;
-    if(isFuncDecl) 
-    {
-        functionCount_++;
-        // std::cout << "functionCount_ = " << functionCount_ << "\n";
-    }
-
-    return std::make_pair(isFuncDecl, funcName);
-}
-
-void Lexer::parseFunctionBody(std::fstream& inputStream, Function& rFunc)
-{
-    auto line = std::string{};
-    while(std::getline(inputStream, line))
-    {
-        lineNumber_++;
-
-        line = trim_copy(line);
-
-        if(line.empty() || starts_with(line, "#"))
-        {
-            continue; 
-        }
-
-        if(auto [isLabelParam, label] = isLabel(line); isLabelParam)
-        {
-            std::cout << "isLabelParam: " << isLabelParam << std::endl;
-            std::cout << "lbl.name_: " << label.name_ << std::endl;
-
-            rFunc.labels_.push_back(label);
-        }
-        else if(auto [isInstrParam, instr] = isInstruction(line); isInstrParam)
-        {
-            std::cout << "inInstrParam: " << isInstrParam << std::endl;
-            std::cout << "instr.name_: " << instr.name_ << std::endl;
-
-            rFunc.code_.push_back(instr);
-        }
-        else if(endOfFunctionDecl(line))
-        {
-            break;
-        }
-        else
-        {
-            Logger::printMessage("Syntax error on line " 
-                    + std::to_string(lineNumber_) 
-                    + ". Invalid statemant at function definition.\n", LogLevel::HIGH);
-            exit(1);
-        }
-    }
-}
-
-std::pair<bool, Label> Lexer::isLabel(const std::string& line)
-{
-    auto label = Label{};
-    auto isLabelParam = false;
-
-    auto tokens = std::vector<std::string>{};
-    tokenize(line, tokens);
-
-    // Label declaration can consist of maximum 2 tokens
-    if(tokens.size() > 2)
-    {
-        isLabelParam = false;
-        return std::make_pair(isLabelParam, label);
-    }
-
-    auto name = std::string{}; 
-    if(tokens.size() == 2)
-    {
-        name = tokens[0];
-        name = trim_copy(name);
-
-        isLabelParam = true;
-    }
-    else if(tokens.size() == 1)
-    {
-        name = tokens[0];
-        name = trim_copy(name);
-
-        if(name[name.size() - 1] != ':')
-        {
-            isLabelParam = false;
-            return std::make_pair(isLabelParam, label);
-        }
-
-        name = name.substr(0, name.size() - 1);
-
-        if(!checkCorrectKeyword(name))
-        {
-            Logger::printMessage("Syntax error on line " 
-                    + std::to_string(lineNumber_) 
-                    + ". Invalid identifier name for label.\n", LogLevel::HIGH);
-            exit(1);
-
-        }
-
-        isLabelParam = true;
-    }
-
-    label.name_ = name;
-
-    return std::make_pair(isLabelParam, label);
-}
-
-std::pair<bool, Instruction> Lexer::isInstruction(const std::string& line)
-{
-    bool isInstr = false;
-    
-    return std::make_pair(isInstr, Instruction{});
-}
-
-
-std::pair<bool, InstructionType> Lexer::isInstructionType(const std::string& token)
-{
-
-  return std::make_pair(false, InstructionType::NOP);
-}
-
-std::pair<bool, Extension> Lexer::isExtension(const std::string& token)
-{
-  return std::make_pair(false, Extension::DWORD);
-}
-
-std::pair<bool, OpList> Lexer::isOperandList(const std::string& token)
-{
-  return std::make_pair(false, OpList{});
-}
-
-bool Lexer::endOfFunctionDecl(const std::string& line)
-{
-  return !(line.compare(END_FUNCTION_KWRD));
 }
 
 MainSection Lexer::parseMainSection(std::fstream& inputStream)

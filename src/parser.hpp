@@ -23,10 +23,15 @@ struct Parser
   using LexerPtr = std::unique_ptr<Lexer>;
   LexerPtr      pLexer_{nullptr};
 
+  /*
+   * Main Sections
+   */
   StackSection  stackSec_{};
   DataSection   dataSec_{};
   CodeSection   codeSec_{};
   MainSection   mainSec_{};
+
+
 
   /*
    * Utilities for semantic checks

@@ -11,6 +11,7 @@ set(SOURCES main.cpp
             debug.hpp
             common.hpp
             utility.hpp
+            utility.cpp
             array.hpp
             extension_defs.hpp
             function.hpp
@@ -30,6 +31,8 @@ set(SOURCES main.cpp
             lexer_defs.hpp
             parser.cpp
             parser.hpp
+            code_section_parser.cpp
+            code_section_parser.hpp
             parser_defs.hpp
             logger.cpp
             logger.hpp)
