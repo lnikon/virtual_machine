@@ -131,13 +131,9 @@ std::pair<bool, std::string> CodeSectionParser::isFunctionDeclaration(const std:
     }
 
     const bool isFuncDecl = startWithFunctionKeyword && ((tokens.size() == 2) || (tokens.size() == 3));
-    // std::cout << "startWithFunctionKeyword: " << std::boolalpha << startWithFunctionKeyword << std::endl;
-    // std::cout << "isFuncDecl: " << std::boolalpha << isFuncDecl << std::endl;
-    // std::cout << "tokens.size: " << tokens.size() << std::endl;
     if(isFuncDecl)
     {
         functionCount_++;
-        // std::cout << "functionCount_ = " << functionCount_ << "\n";
     }
 
     return std::make_pair(isFuncDecl, funcName);

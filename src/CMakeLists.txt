@@ -31,6 +31,8 @@ set(SOURCES main.cpp
             lexer_defs.hpp
             parser.cpp
             parser.hpp
+            data_section_parser.cpp
+            data_section_parser.hpp
             code_section_parser.cpp
             code_section_parser.hpp
             parser_defs.hpp

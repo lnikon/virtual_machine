@@ -1,0 +1,628 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+$(VERBOSE).SILENT	build/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	build/src/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+ADC	src/instruction.hpp	/^  ADC,$/;"	e	enum:InstructionType
+ADC_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string ADC_INSTR_NAME      = "ADC";$/;"	v	typeref:typename:const std::string
+ADD	src/instruction.hpp	/^  ADD,$/;"	e	enum:InstructionType
+ADD_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string ADD_INSTR_NAME      = "ADD";$/;"	v	typeref:typename:const std::string
+AND	src/instruction.hpp	/^  AND, $/;"	e	enum:InstructionType
+AND_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string AND_INSTR_NAME      = "AND"; $/;"	v	typeref:typename:const std::string
+ARCHITECTURE_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ASSIGN	src/instruction.hpp	/^  ASSIGN,$/;"	e	enum:InstructionType
+ASSIGN_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string ASSIGN_INSTR_NAME   = "ASSIGN";$/;"	v	typeref:typename:const std::string
+Array	src/array.hpp	/^struct Array$/;"	s
+BREAK	src/instruction.hpp	/^  BREAK,$/;"	e	enum:InstructionType
+BREAK_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string BREAK_INSTR_NAME    = "BREAK";$/;"	v	typeref:typename:const std::string
+BYTE	src/extension_defs.hpp	/^  BYTE,$/;"	e	enum:Extension
+BYTE	src/type_defs.hpp	/^using BYTE  = uint8_t;$/;"	t	typeref:typename:uint8_t
+CALL	src/instruction.hpp	/^  CALL,$/;"	e	enum:InstructionType
+CALL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string CALL_INSTR_NAME     = "CALL";$/;"	v	typeref:typename:const std::string
+CAST	src/instruction.hpp	/^  CAST$/;"	e	enum:InstructionType
+CAST_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string CAST_INSTR_NAME     = "CAST";$/;"	v	typeref:typename:const std::string
+CAUTION: Everyting what you can see in this repo is in eraly stage of development. So there are possible bugs, unhandled situations, not finished function, etc...	README.md	/^# CAUTION: Everyting what you can see in this repo is in eraly stage of development. So there ar/;"	c
+CHAR	src/extension_defs.hpp	/^  CHAR,$/;"	e	enum:Extension
+CHAR	src/type_defs.hpp	/^using CHAR  = unsigned char;$/;"	t	typeref:typename:unsigned char
+CMAKE_AR	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/name\/virtual_machine\/build$/;"	m
+CMAKE_BINARY_DIR	build/src/Makefile	/^CMAKE_BINARY_DIR = \/home\/name\/virtual_machine\/build$/;"	m
+CMAKE_C11_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/src/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMPILER_IS_CYGWIN	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_CYGWIN	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_GNUCC	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCXX	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCXX 1)$/;"	v
+CMAKE_COMPILER_IS_MINGW	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_COMPILER_IS_MINGW	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_CROSSCOMPILING	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	build/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	build/src/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CXX11_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_att/;"	v
+CMAKE_CXX14_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX14_COMPILE_FEATURES "cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_de/;"	v
+CMAKE_CXX17_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")$/;"	v
+CMAKE_CXX20_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")$/;"	v
+CMAKE_CXX98_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX98_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters")$/;"	v
+CMAKE_CXX_ABI_COMPILED	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_ABI_COMPILED TRUE)$/;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_CXX_COMPILER	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER "\/usr\/bin\/c++")$/;"	v
+CMAKE_CXX_COMPILER_ABI	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ABI "ELF")$/;"	v
+CMAKE_CXX_COMPILER_AR	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_CXX_COMPILER_ARG1	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ARG1 "")$/;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ENV_VAR "CXX")$/;"	v
+CMAKE_CXX_COMPILER_ID	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID	build/src/CMakeFiles/czlp.dir/DependInfo.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID_RUN	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_CXX_COMPILER_LOADED	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_LOADED 1)$/;"	v
+CMAKE_CXX_COMPILER_RANLIB	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_CXX_COMPILER_VERSION	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION "8.3.0")$/;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_CXX_COMPILER_WORKS	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_CXX_COMPILER_WRAPPER	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WRAPPER "")$/;"	v
+CMAKE_CXX_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias/;"	v
+CMAKE_CXX_FLAGS	src/CMakeLists.txt	/^set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address -g -O0 -Wall ")$/;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/include\/c++\/8.3.0;\/usr\/include\/c++\/8.3./;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/8.3.0;\/usr\/lib;/;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	build/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	build/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE 30)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)$/;"	v
+CMAKE_CXX_PLATFORM_ID	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_PLATFORM_ID "Linux")$/;"	v
+CMAKE_CXX_SIMULATE_ID	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_ID "")$/;"	v
+CMAKE_CXX_SIMULATE_VERSION	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_VERSION "")$/;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;mm;CPP)$/;"	v
+CMAKE_CXX_STANDARD	src/CMakeLists.txt	/^set(CMAKE_CXX_STANDARD 17)$/;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")$/;"	v
+CMAKE_CXX_TARGET_INCLUDE_PATH	build/src/CMakeFiles/czlp.dir/DependInfo.cmake	/^set(CMAKE_CXX_TARGET_INCLUDE_PATH$/;"	v
+CMAKE_C_ABI_COMPILED	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_COMPILER	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER_ABI	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
+CMAKE_C_COMPILER_AR	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_C_COMPILER_ARG1	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_ID	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
+CMAKE_C_COMPILER_ID_RUN	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_RANLIB	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_C_COMPILER_VERSION	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "8.3.0")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_WORKS	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WRAPPER	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILE_FEATURES	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/8.3.0\/include;\//;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/8.3.0;\/usr\/lib;\//;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	build/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	build/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_C_LINKER_PREFERENCE	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_PLATFORM_ID	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
+CMAKE_C_SIMULATE_ID	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")$/;"	v
+CMAKE_DEPENDS_CHECK_CXX	build/src/CMakeFiles/czlp.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_CXX$/;"	v
+CMAKE_DEPENDS_GENERATOR	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_LANGUAGES	build/src/CMakeFiles/czlp.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPEND_INFO_FILES	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
+CMAKE_FORCE_UNIX_PATHS	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_FORCE_UNIX_PATHS	build/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/src/CMakeFiles/czlp.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_HOST_SYSTEM	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-4.19.42-1-MANJARO")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "4.19.42-1-MANJARO")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_COMPONENT	build/src/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	build/src/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	build/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	build/src/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
+CMAKE_INSTALL_MANIFEST	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_PREFIX	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_PREFIX	build/src/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	build/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	build/src/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_CXX_COMPILER_ABI}")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LINKER	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_MAKEFILE_DEPENDS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MT	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_RANLIB	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/name\/virtual_machine\/build")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	build/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/name\/virtual_machine\/build")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/name\/virtual_machine")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	build/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/name\/virtual_machine")$/;"	v
+CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/name\/virtual_machine$/;"	m
+CMAKE_SOURCE_DIR	build/src/Makefile	/^CMAKE_SOURCE_DIR = \/home\/name\/virtual_machine$/;"	m
+CMAKE_SYSTEM	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-4.19.42-1-MANJARO")$/;"	v
+CMAKE_SYSTEM_LOADED	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_NAME	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_VERSION	build/CMakeFiles/3.14.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "4.19.42-1-MANJARO")$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	build/src/CMakeFiles/czlp.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMP	src/instruction.hpp	/^  CMP,$/;"	e	enum:InstructionType
+CMP_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string CMP_INSTR_NAME      = "CMP";$/;"	v	typeref:typename:const std::string
+CODE_SECTION_PARSER_H	src/code_section_parser.hpp	/^#define CODE_SECTION_PARSER_H$/;"	d
+CODE_SEC_NAME	src/lexer_defs.hpp	/^static const std::string CODE_SEC_NAME  = ".CODE";$/;"	v	typeref:typename:const std::string
+COMPILER_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+CXX_STD	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD /;"	d	file:
+CYGWIN	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+CYGWIN	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+C_DIALECT	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
+C_DIALECT	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
+C_DIALECT	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
+CodeSection	src/parser_defs.hpp	/^struct CodeSection$/;"	s
+CodeSectionParser	src/code_section_parser.hpp	/^class CodeSectionParser$/;"	c
+DATA_SEC_NAME	src/lexer_defs.hpp	/^static const std::string DATA_SEC_NAME  = ".DATA";$/;"	v	typeref:typename:const std::string
+DEBUG	src/logger.hpp	/^  DEBUG,$/;"	e	enum:LogLevel
+DEBUG_MODE	src/debug.hpp	/^#define DEBUG_MODE$/;"	d
+DEBUG_MODE	src/lexer.cpp	/^#define DEBUG_MODE$/;"	d	file:
+DEC	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+DEC	src/instruction.hpp	/^  DEC,$/;"	e	enum:InstructionType
+DEC_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string DEC_INSTR_NAME      = "DEC";$/;"	v	typeref:typename:const std::string
+DIV	src/instruction.hpp	/^  DIV,$/;"	e	enum:InstructionType
+DIV_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string DIV_INSTR_NAME      = "DIV";$/;"	v	typeref:typename:const std::string
+DWORD	src/extension_defs.hpp	/^  DWORD,$/;"	e	enum:Extension
+DWORD	src/type_defs.hpp	/^using DWORD = uint32_t;$/;"	t	typeref:typename:uint32_t
+DataSection	src/parser_defs.hpp	/^struct DataSection$/;"	s
+END	src/instruction.hpp	/^  END,$/;"	e	enum:InstructionType
+END_FUNCTION_KWRD	src/lexer_defs.hpp	/^static const std::string END_FUNCTION_KWRD = "EndF";$/;"	v	typeref:typename:const std::string
+END_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string END_INSTR_NAME      = "END";$/;"	v	typeref:typename:const std::string
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/src/Makefile	/^EQUALS = =$/;"	m
+EXEC_NAME	src/CMakeLists.txt	/^set(EXEC_NAME "czlp")$/;"	v
+Extension	src/extension_defs.hpp	/^enum class Extension $/;"	g
+FUN	src/operand.hpp	/^  FUN,      \/\/ Function name$/;"	e	enum:OperandType
+FUNCTION_KWRD	src/lexer_defs.hpp	/^static const std::string FUNCTION_KWRD = "Func";$/;"	v	typeref:typename:const std::string
+Function	src/function.hpp	/^struct Function$/;"	s
+FunctionList	src/function.hpp	/^using FunctionList = std::vector<Function>;$/;"	t	typeref:typename:std::vector<Function>
+GFLR	src/instruction.hpp	/^  GFLR,$/;"	e	enum:InstructionType
+GLFR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string GLFR_INSTR_NAME     = "GFLR";$/;"	v	typeref:typename:const std::string
+HEX	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+HIGH	src/logger.hpp	/^  HIGH,$/;"	e	enum:LogLevel
+How to Build	README.md	/^# How to Build$/;"	c
+IDIV	src/instruction.hpp	/^  IDIV,$/;"	e	enum:InstructionType
+IDIV_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string IDIV_INSTR_NAME     = "IDIV";$/;"	v	typeref:typename:const std::string
+ID_VOID_MAIN	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+IMUL	src/instruction.hpp	/^  IMUL,$/;"	e	enum:InstructionType
+IMUL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string IMUL_INSTR_NAME     = "IMUL";$/;"	v	typeref:typename:const std::string
+IN	src/instruction.hpp	/^  IN,$/;"	e	enum:InstructionType
+INC	src/instruction.hpp	/^  INC,$/;"	e	enum:InstructionType
+INC_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string INC_INSTR_NAME      = "INC";$/;"	v	typeref:typename:const std::string
+INVALID	src/extension_defs.hpp	/^  INVALID = 0,$/;"	e	enum:Extension
+IN_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string IN_INSTR_NAME       = "IN";$/;"	v	typeref:typename:const std::string
+Instruction	src/instruction.hpp	/^struct Instruction$/;"	s
+InstructionEnvirnoment	src/instruction_envirnoment.cpp	/^InstructionEnvirnoment::InstructionEnvirnoment() noexcept$/;"	f	class:InstructionEnvirnoment
+InstructionEnvirnoment	src/instruction_envirnoment.hpp	/^struct InstructionEnvirnoment$/;"	s
+InstructionList	src/instruction.hpp	/^using InstructionList = std::vector<Instruction>;$/;"	t	typeref:typename:std::vector<Instruction>
+InstructionType	src/instruction.hpp	/^enum class InstructionType $/;"	g
+JUMP	src/instruction.hpp	/^  JUMP,$/;"	e	enum:InstructionType
+JUMP_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string JUMP_INSTR_NAME     = "JUMP";$/;"	v	typeref:typename:const std::string
+LDREL	src/instruction.hpp	/^  LDREL,$/;"	e	enum:InstructionType
+LDREL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string LDREL_INSTR_NAME    = "LDREL";$/;"	v	typeref:typename:const std::string
+LOAD	src/instruction.hpp	/^  LOAD,$/;"	e	enum:InstructionType
+LOAD_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string LOAD_INSTR_NAME     = "LOAD";$/;"	v	typeref:typename:const std::string
+LOW	src/logger.hpp	/^  LOW = 0,$/;"	e	enum:LogLevel
+Label	src/label.hpp	/^struct Label$/;"	s
+LabelList	src/label.hpp	/^using LabelList = std::vector<Label>;$/;"	t	typeref:typename:std::vector<Label>
+Lexer	src/lexer.hpp	/^struct Lexer$/;"	s
+LexerPtr	src/parser.hpp	/^  using LexerPtr = std::unique_ptr<Lexer>;$/;"	t	struct:Parser	typeref:typename:std::unique_ptr<Lexer>
+LogLevel	src/logger.hpp	/^enum class LogLevel$/;"	g
+Logger	src/logger.hpp	/^struct Logger$/;"	s
+MAIN_SEC_NAME	src/lexer_defs.hpp	/^static const std::string MAIN_SEC_NAME  = ".MAIN";$/;"	v	typeref:typename:const std::string
+MEM	src/operand.hpp	/^  MEM,      \/\/ Memory Address$/;"	e	enum:OperandType
+MID	src/logger.hpp	/^  MID,$/;"	e	enum:LogLevel
+MINGW	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MINGW	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MOVE	src/instruction.hpp	/^  MOVE,$/;"	e	enum:InstructionType
+MOVE_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string MOVE_INSTR_NAME     = "MOVE";$/;"	v	typeref:typename:const std::string
+MUL	src/instruction.hpp	/^  MUL,$/;"	e	enum:InstructionType
+MUL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string MUL_INSTR_NAME      = "MUL";$/;"	v	typeref:typename:const std::string
+MainSection	src/parser_defs.hpp	/^struct MainSection$/;"	s
+NAND	src/instruction.hpp	/^  NAND,$/;"	e	enum:InstructionType
+NAND_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string NAND_INSTR_NAME     = "NAND";$/;"	v	typeref:typename:const std::string
+NEG	src/instruction.hpp	/^  NEG,$/;"	e	enum:InstructionType
+NEG_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string NEG_INSTR_NAME      = "NEG";$/;"	v	typeref:typename:const std::string
+NOP	src/instruction.hpp	/^  NOP = 0,$/;"	e	enum:InstructionType
+NOP_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string NOP_INSTR_NAME      = "NOP";$/;"	v	typeref:typename:const std::string
+NOR	src/instruction.hpp	/^  NOR,$/;"	e	enum:InstructionType
+NOR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string NOR_INSTR_NAME      = "NOR";$/;"	v	typeref:typename:const std::string
+NOT	src/instruction.hpp	/^  NOT,$/;"	e	enum:InstructionType
+NOT_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string NOT_INSTR_NAME      = "NOT";$/;"	v	typeref:typename:const std::string
+OR	src/instruction.hpp	/^  OR,$/;"	e	enum:InstructionType
+OR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string OR_INSTR_NAME       = "OR";$/;"	v	typeref:typename:const std::string
+OUT	src/instruction.hpp	/^  OUT,$/;"	e	enum:InstructionType
+OUT_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string OUT_INSTR_NAME      = "OUT";$/;"	v	typeref:typename:const std::string
+OpList	src/operand.hpp	/^using OpList = std::vector<Operand>;$/;"	t	typeref:typename:std::vector<Operand>
+Operand	src/operand.hpp	/^struct Operand$/;"	s
+OperandType	src/operand.hpp	/^enum class OperandType$/;"	g
+PLATFORM_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+POP	src/instruction.hpp	/^  POP,$/;"	e	enum:InstructionType
+POPSF	src/instruction.hpp	/^  POPSF,$/;"	e	enum:InstructionType
+POPSF_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string POPSF_INSTR_NAME    = "POPSF";$/;"	v	typeref:typename:const std::string
+POP_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string POP_INSTR_NAME      = "POP";$/;"	v	typeref:typename:const std::string
+PUSH	src/instruction.hpp	/^  PUSH,$/;"	e	enum:InstructionType
+PUSHA	src/instruction.hpp	/^  PUSHA,$/;"	e	enum:InstructionType
+PUSHA_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string PUSHA_INSTR_NAME    = "PUSHA";$/;"	v	typeref:typename:const std::string
+PUSHSF	src/instruction.hpp	/^  PUSHSF,$/;"	e	enum:InstructionType
+PUSHSF_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string PUSHSF_INSTR_NAME   = "PUSHSF";$/;"	v	typeref:typename:const std::string
+PUSH_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string PUSH_INSTR_NAME     = "PUSH";$/;"	v	typeref:typename:const std::string
+Parser	src/parser.cpp	/^Parser::Parser()$/;"	f	class:Parser
+Parser	src/parser.hpp	/^struct Parser$/;"	s
+QWORD	src/extension_defs.hpp	/^  QWORD,$/;"	e	enum:Extension
+QWORD	src/type_defs.hpp	/^using QWORD = uint64_t;$/;"	t	typeref:typename:uint64_t
+RCL	src/instruction.hpp	/^  RCL,$/;"	e	enum:InstructionType
+RCL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string RCL_INSTR_NAME      = "RCL";$/;"	v	typeref:typename:const std::string
+RCR	src/instruction.hpp	/^  RCR,$/;"	e	enum:InstructionType
+RCR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string RCR_INSTR_NAME      = "RCR";$/;"	v	typeref:typename:const std::string
+REG	src/operand.hpp	/^  REG = 0,  \/\/ Register name$/;"	e	enum:OperandType
+RET	src/instruction.hpp	/^  RET,$/;"	e	enum:InstructionType
+RET_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string RET_INSTR_NAME      = "RET";$/;"	v	typeref:typename:const std::string
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/src/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+ROL	src/instruction.hpp	/^  ROL,$/;"	e	enum:InstructionType
+ROL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string ROL_INSTR_NAME      = "ROL";$/;"	v	typeref:typename:const std::string
+ROR	src/instruction.hpp	/^  ROR,$/;"	e	enum:InstructionType
+ROR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string ROR_INSTR_NAME      = "ROR";$/;"	v	typeref:typename:const std::string
+ResultType	src/instruction_envirnoment.hpp	/^  using ResultType  = std::optional<std::pair<std::string, InstructionType>>;$/;"	t	struct:InstructionEnvirnoment	typeref:typename:std::optional<std::pair<std::string,InstructionType>>
+SAL	src/instruction.hpp	/^  SAL,$/;"	e	enum:InstructionType
+SAL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SAL_INSTR_NAME      = "SAL";$/;"	v	typeref:typename:const std::string
+SAR	src/instruction.hpp	/^  SAR,$/;"	e	enum:InstructionType
+SAR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SAR_INSTR_NAME      = "SAR";$/;"	v	typeref:typename:const std::string
+SBB	src/instruction.hpp	/^  SBB,$/;"	e	enum:InstructionType
+SBB_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SBB_INSTR_NAME      = "SBB";$/;"	v	typeref:typename:const std::string
+SET	src/instruction.hpp	/^  SET,$/;"	e	enum:InstructionType
+SET_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SET_INSTR_NAME      = "SET";$/;"	v	typeref:typename:const std::string
+SFLR	src/instruction.hpp	/^  SFLR,$/;"	e	enum:InstructionType
+SFLR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SFLR_INSTR_NAME     = "SFLR";$/;"	v	typeref:typename:const std::string
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/src/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHL	src/instruction.hpp	/^  SHL,$/;"	e	enum:InstructionType
+SHL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SHL_INSTR_NAME      = "SHL";$/;"	v	typeref:typename:const std::string
+SHR	src/instruction.hpp	/^  SHR,$/;"	e	enum:InstructionType
+SHR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SHR_INSTR_NAME      = "SHR";$/;"	v	typeref:typename:const std::string
+SIMULATE_ID	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SOURCES	src/CMakeLists.txt	/^set(SOURCES main.cpp$/;"	v
+STACK_SEC_NAME	src/lexer_defs.hpp	/^static const std::string STACK_SEC_NAME = ".STACK";$/;"	v	typeref:typename:const std::string
+STORE	src/instruction.hpp	/^  STORE,$/;"	e	enum:InstructionType
+STORE_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string STORE_INSTR_NAME    = "STORE";$/;"	v	typeref:typename:const std::string
+STREL	src/instruction.hpp	/^  STREL,$/;"	e	enum:InstructionType
+STREL_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string STREL_INSTR_NAME    = "STREL";$/;"	v	typeref:typename:const std::string
+STRINGIFY	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+SUB	src/instruction.hpp	/^  SUB,$/;"	e	enum:InstructionType
+SUB_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SUB_INSTR_NAME      = "SUB";$/;"	v	typeref:typename:const std::string
+SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/src/Makefile	/^SUFFIXES =$/;"	m
+SWAP	src/instruction.hpp	/^  SWAP,$/;"	e	enum:InstructionType
+SWAP_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string SWAP_INSTR_NAME     = "SWAP";$/;"	v	typeref:typename:const std::string
+StackSection	src/parser_defs.hpp	/^struct StackSection$/;"	s
+TEST	src/instruction.hpp	/^  TEST,$/;"	e	enum:InstructionType
+TEST_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string TEST_INSTR_NAME     = "TEST";$/;"	v	typeref:typename:const std::string
+ToDo List:	README.md	/^# ToDo List:$/;"	c
+UNIX	build/CMakeFiles/3.14.4/CMakeCCompiler.cmake	/^  set(UNIX 1)$/;"	v
+UNIX	build/CMakeFiles/3.14.4/CMakeCXXCompiler.cmake	/^  set(UNIX 1)$/;"	v
+VM_DEFAULT_STACK_SIZE	src/vm_config.hpp	/^static std::size_t VM_DEFAULT_STACK_SIZE = 1024;$/;"	v	typeref:typename:std::size_t
+VM_MAX_STACK_SIZE	src/vm_config.hpp	/^static std::size_t VM_MAX_STACK_SIZE = 4096;$/;"	v	typeref:typename:std::size_t
+VM_MIN_STACK_SIZE	src/vm_config.hpp	/^static std::size_t VM_MIN_STACK_SIZE = 256;$/;"	v	typeref:typename:std::size_t
+ValueType	src/instruction_envirnoment.hpp	/^  using ValueType   = std::pair<std::string, InstructionType>;$/;"	t	struct:InstructionEnvirnoment	typeref:typename:std::pair<std::string,InstructionType>
+ValueType	src/type_defs.hpp	/^using ValueType = Extension;$/;"	t	typeref:typename:Extension
+Variable	src/variable.hpp	/^struct Variable$/;"	s
+VirtualMachine	src/vm.hpp	/^struct VirtualMachine$/;"	s
+WORD	src/extension_defs.hpp	/^  WORD,$/;"	e	enum:Extension
+WORD	src/type_defs.hpp	/^using WORD  = uint16_t;$/;"	t	typeref:typename:uint16_t
+XOR	src/instruction.hpp	/^  XOR,$/;"	e	enum:InstructionType
+XOR_INSTR_NAME	src/instruction_envirnoment.hpp	/^const std::string XOR_INSTR_NAME      = "XOR";$/;"	v	typeref:typename:const std::string
+__anon366da0230102	src/instruction_envirnoment.cpp	/^  auto findByName = [&name](const ValueType& value) {$/;"	f	function:InstructionEnvirnoment::findInstructionName	file:
+__anone81e94010102	src/utility.cpp	/^    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](int ch) {$/;"	f	function:utility::ltrim	file:
+__anone81e94010202	src/utility.cpp	/^    s.erase(std::find_if(s.rbegin(), s.rend(), [](int ch) {$/;"	f	function:utility::rtrim	file:
+__anone81e94010302	src/utility.cpp	/^        s.end(), [](char c) { return !std::isdigit(c); }) == s.end();$/;"	f	function:utility::is_number	file:
+all	build/Makefile	/^all: cmake_check_build_system$/;"	t
+all	build/src/Makefile	/^all: cmake_check_build_system$/;"	t
+areEqual	src/variable.cpp	/^bool Variable::areEqual(const Variable& var1, const Variable& var2)$/;"	f	class:Variable	typeref:typename:bool
+arrayExists	src/parser_defs.hpp	/^  bool arrayExists(const std::string& name) {}$/;"	f	struct:DataSection	typeref:typename:bool
+arrayMap_	src/parser_defs.hpp	/^  std::unordered_map<std::string, Array>    arrayMap_;  $/;"	m	struct:DataSection	typeref:typename:std::unordered_map<std::string,Array>
+charValue_	src/variable.hpp	/^  CHAR        charValue_{};$/;"	m	struct:Variable	typeref:typename:CHAR
+checkCorrectKeyword	src/utility.cpp	/^bool utility::checkCorrectKeyword(const std::string& line)$/;"	f	class:utility	typeref:typename:bool
+checkDataSection	src/parser.cpp	/^bool Parser::checkDataSection(const DataSection& dataSec) const$/;"	f	class:Parser	typeref:typename:bool
+checkStackSection	src/parser.cpp	/^bool Parser::checkStackSection(const StackSection& stackSec) const$/;"	f	class:Parser	typeref:typename:bool
+checkStackSize	src/parser.cpp	/^bool Parser::checkStackSize(const std::size_t stackSize) const$/;"	f	class:Parser	typeref:typename:bool
+clean	build/Makefile	/^clean:$/;"	t
+clean	build/src/Makefile	/^clean:$/;"	t
+clean/fast	build/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	build/src/Makefile	/^clean\/fast: clean$/;"	t
+cmake_check_build_system	build/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	build/src/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_force	build/Makefile	/^cmake_force:$/;"	t
+cmake_force	build/src/Makefile	/^cmake_force:$/;"	t
+codeSec_	src/parser.hpp	/^  CodeSection   codeSec_{};$/;"	m	struct:Parser	typeref:typename:CodeSection
+codeSectionParser_	src/lexer.hpp	/^  CodeSectionParser codeSectionParser_{};$/;"	m	struct:Lexer	typeref:typename:CodeSectionParser
+code_	src/function.hpp	/^  InstructionList code_{};$/;"	m	struct:Function	typeref:typename:InstructionList
+code_	src/parser_defs.hpp	/^  FunctionList code_{};$/;"	m	struct:CodeSection	typeref:typename:FunctionList
+const	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+convertBoolToString	src/utility.cpp	/^std::string utility::convertBoolToString(const bool value)$/;"	f	class:utility	typeref:typename:std::string
+convertVectorOfStringToString	src/utility.cpp	/^std::string utility::convertVectorOfStringToString(const std::vector<std::string>& strings)$/;"	f	class:utility	typeref:typename:std::string
+counter	src/lexer.cpp	/^static int counter = 0;$/;"	v	typeref:typename:int	file:
+czlp	build/Makefile	/^czlp: cmake_check_build_system$/;"	t
+czlp	build/src/Makefile	/^czlp: src\/CMakeFiles\/czlp.dir\/rule$/;"	t
+czlp/fast	build/Makefile	/^czlp\/fast:$/;"	t
+czlp/fast	build/src/Makefile	/^czlp\/fast:$/;"	t
+dataSec_	src/parser.hpp	/^  DataSection   dataSec_{};$/;"	m	struct:Parser	typeref:typename:DataSection
+default_target	build/Makefile	/^default_target: all$/;"	t
+default_target	build/src/Makefile	/^default_target: all$/;"	t
+depend	build/Makefile	/^depend:$/;"	t
+depend	build/src/Makefile	/^depend:$/;"	t
+edit_cache	build/Makefile	/^edit_cache:$/;"	t
+edit_cache	build/src/Makefile	/^edit_cache:$/;"	t
+edit_cache/fast	build/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	build/src/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+endOfFunctionDecl	src/code_section_parser.cpp	/^bool CodeSectionParser::endOfFunctionDecl(const std::string& line)$/;"	f	class:CodeSectionParser	typeref:typename:bool
+ex_	src/instruction.hpp	/^  Extension       ex_{Extension::DWORD};$/;"	m	struct:Instruction	typeref:typename:Extension
+features	build/CMakeFiles/feature_tests.c	/^  const char features[] = {"\\n"$/;"	v	typeref:typename:const char[]
+features	build/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	v	typeref:typename:const char[]
+findInstructionName	src/instruction_envirnoment.cpp	/^InstructionEnvirnoment::findInstructionName(const std::string& name)$/;"	f	class:InstructionEnvirnoment	typeref:typename:InstructionEnvirnoment::ResultType
+find_and_replace	src/utility.cpp	/^void utility::find_and_replace(std::string& str,$/;"	f	class:utility	typeref:typename:void
+functionCount_	src/code_section_parser.hpp	/^    int functionCount_{0};$/;"	m	class:CodeSectionParser	typeref:typename:int
+functionCount_	src/lexer.hpp	/^  std::size_t functionCount_{0};$/;"	m	struct:Lexer	typeref:typename:std::size_t
+functionExists	src/parser_defs.hpp	/^  bool functionExists(const Function& name) {}$/;"	f	struct:CodeSection	typeref:typename:bool
+functionExists	src/parser_defs.hpp	/^  bool functionExists(const std::string& name) {}$/;"	f	struct:CodeSection	typeref:typename:bool
+getArray	src/parser_defs.hpp	/^  const Array& getArray(const std::string& name) {}$/;"	f	struct:DataSection	typeref:typename:const Array &
+getArrayName	src/lexer.cpp	/^std::string Lexer::getArrayName(const std::string& line)$/;"	f	class:Lexer	typeref:typename:std::string
+getArraySize	src/lexer.cpp	/^std::pair<bool, std::size_t> Lexer::getArraySize(const std::string& line)$/;"	f	class:Lexer	typeref:typename:std::pair<bool,std::size_t>
+getArrayValueForLexer	src/lexer.cpp	/^std::pair<bool, std::vector<std::string>> Lexer::getArrayValueForLexer(const std::string& line)$/;"	f	class:Lexer	typeref:typename:std::pair<bool,std::vector<std::string>>
+getArraysVector	src/parser_defs.hpp	/^  std::vector<Array> getArraysVector() const $/;"	f	struct:DataSection	typeref:typename:std::vector<Array>
+getCharValueForLexer	src/lexer.cpp	/^std::pair<bool, char> Lexer::getCharValueForLexer(const std::string& line)$/;"	f	class:Lexer	typeref:typename:std::pair<bool,char>
+getCodeSection	src/parser.cpp	/^CodeSection Parser::getCodeSection() const$/;"	f	class:Parser	typeref:typename:CodeSection
+getDataSection	src/parser.cpp	/^DataSection Parser::getDataSection() const$/;"	f	class:Parser	typeref:typename:DataSection
+getFunctionName	src/code_section_parser.cpp	/^std::pair<bool, std::string> CodeSectionParser::getFunctionName(const std::string& line)$/;"	f	class:CodeSectionParser	typeref:typename:std::pair<bool,std::string>
+getLineNumber	src/code_section_parser.hpp	/^    int getLineNumber() const { return lineNumber_; }$/;"	f	class:CodeSectionParser	typeref:typename:int
+getMainSection	src/parser.cpp	/^MainSection Parser::getMainSection() const$/;"	f	class:Parser	typeref:typename:MainSection
+getSpecifiedType	src/lexer.cpp	/^ValueType Lexer::getSpecifiedType(const std::string& line)$/;"	f	class:Lexer	typeref:typename:ValueType
+getStackSection	src/parser.cpp	/^StackSection Parser::getStackSection() const$/;"	f	class:Parser	typeref:typename:StackSection
+getStringValueForLexer	src/lexer.cpp	/^Lexer::getStringValueForLexer(const std::string& line)$/;"	f	class:Lexer	typeref:typename:std::pair<bool,std::vector<std::string>>
+getVariable	src/parser_defs.hpp	/^  const Variable& getVariable(const std::string& name) {}$/;"	f	struct:DataSection	typeref:typename:const Variable &
+getVariableName	src/lexer.cpp	/^std::string Lexer::getVariableName(const std::string& line)$/;"	f	class:Lexer	typeref:typename:std::string
+getVariablesVector	src/parser_defs.hpp	/^  std::vector<Variable> getVariablesVector() const $/;"	f	struct:DataSection	typeref:typename:std::vector<Variable>
+help	build/Makefile	/^help:$/;"	t
+help	build/src/Makefile	/^help:$/;"	t
+info_arch	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_cray	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_language_dialect_default	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v	typeref:typename:const char *
+info_language_dialect_default	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v	typeref:typename:const char *
+info_platform	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate_version	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+insertArray	src/parser_defs.hpp	/^  void insertArray(const std::string& name, const Array& var) {}$/;"	f	struct:DataSection	typeref:typename:void
+insertFunction	src/parser_defs.hpp	/^  void insertFunction(const Function& function) {}$/;"	f	struct:CodeSection	typeref:typename:void
+insertVariable	src/parser_defs.hpp	/^  void insertVariable(const std::string& name, const Variable& var) {}$/;"	f	struct:DataSection	typeref:typename:void
+instrIndex_	src/label.hpp	/^  std::size_t       instrIndex_{}; $/;"	m	struct:Label	typeref:typename:std::size_t
+instruction_envirnoment.cpp.i	build/src/Makefile	/^instruction_envirnoment.cpp.i:$/;"	t
+instruction_envirnoment.cpp.o	build/src/Makefile	/^instruction_envirnoment.cpp.o:$/;"	t
+instruction_envirnoment.cpp.s	build/src/Makefile	/^instruction_envirnoment.cpp.s:$/;"	t
+instruction_envirnoment.i	build/src/Makefile	/^instruction_envirnoment.i: instruction_envirnoment.cpp.i$/;"	t
+instruction_envirnoment.o	build/src/Makefile	/^instruction_envirnoment.o: instruction_envirnoment.cpp.o$/;"	t
+instruction_envirnoment.s	build/src/Makefile	/^instruction_envirnoment.s: instruction_envirnoment.cpp.s$/;"	t
+isArrayDeclaration	src/lexer.cpp	/^bool Lexer::isArrayDeclaration(const std::string& line) const$/;"	f	class:Lexer	typeref:typename:bool
+isExpessionTypeSupported	src/parser.cpp	/^bool Parser::isExpessionTypeSupported(ValueType type) const$/;"	f	class:Parser	typeref:typename:bool
+isExtension	src/code_section_parser.cpp	/^std::pair<bool, Extension> CodeSectionParser::isExtension(const std::string& token)$/;"	f	class:CodeSectionParser	typeref:typename:std::pair<bool,Extension>
+isForwardDeclared	src/function.hpp	/^  bool isForwardDeclared{false};$/;"	m	struct:Function	typeref:typename:bool
+isForwardDeclared	src/parser_defs.hpp	/^  bool isForwardDeclared(const std::string& name) {}$/;"	f	struct:CodeSection	typeref:typename:bool
+isFunctionDeclaration	src/code_section_parser.cpp	/^std::pair<bool, std::string> CodeSectionParser::isFunctionDeclaration(const std::string& line)$/;"	f	class:CodeSectionParser	typeref:typename:std::pair<bool,std::string>
+isInitialized_	src/array.hpp	/^  bool isInitialized_{false};$/;"	m	struct:Array	typeref:typename:bool
+isInitialized_	src/variable.hpp	/^  bool isInitialized_{false};$/;"	m	struct:Variable	typeref:typename:bool
+isInstruction	src/code_section_parser.cpp	/^std::pair<bool, Instruction> CodeSectionParser::isInstruction(const std::string& line)$/;"	f	class:CodeSectionParser	typeref:typename:std::pair<bool,Instruction>
+isInstructionType	src/code_section_parser.cpp	/^std::pair<bool, InstructionType> CodeSectionParser::isInstructionType(const std::string& token)$/;"	f	class:CodeSectionParser	typeref:typename:std::pair<bool,InstructionType>
+isLabel	src/code_section_parser.cpp	/^std::pair<bool, Label> CodeSectionParser::isLabel(const std::string& line)$/;"	f	class:CodeSectionParser	typeref:typename:std::pair<bool,Label>
+isOperandList	src/code_section_parser.cpp	/^std::pair<bool, OpList> CodeSectionParser::isOperandList(const std::string& token)$/;"	f	class:CodeSectionParser	typeref:typename:std::pair<bool,OpList>
+isSizeSpecified_	src/array.hpp	/^  bool                      isSizeSpecified_{false};$/;"	m	struct:Array	typeref:typename:bool
+isStringDeclaration	src/lexer.cpp	/^bool Lexer::isStringDeclaration(const std::string& line) const$/;"	f	class:Lexer	typeref:typename:bool
+isTypeSpecified	src/lexer.cpp	/^std::string Lexer::isTypeSpecified(const std::string& line)$/;"	f	class:Lexer	typeref:typename:std::string
+is_number	src/utility.cpp	/^bool utility::is_number(const std::string& s)$/;"	f	class:utility	typeref:typename:bool
+labels_	src/function.hpp	/^  LabelList       labels_{};$/;"	m	struct:Function	typeref:typename:LabelList
+lexer.cpp.i	build/src/Makefile	/^lexer.cpp.i:$/;"	t
+lexer.cpp.o	build/src/Makefile	/^lexer.cpp.o:$/;"	t
+lexer.cpp.s	build/src/Makefile	/^lexer.cpp.s:$/;"	t
+lexer.i	build/src/Makefile	/^lexer.i: lexer.cpp.i$/;"	t
+lexer.o	build/src/Makefile	/^lexer.o: lexer.cpp.o$/;"	t
+lexer.s	build/src/Makefile	/^lexer.s: lexer.cpp.s$/;"	t
+lineNumber_	src/code_section_parser.hpp	/^    int lineNumber_{0};$/;"	m	class:CodeSectionParser	typeref:typename:int
+lineNumber_	src/lexer.hpp	/^  std::size_t lineNumber_{0};$/;"	m	struct:Lexer	typeref:typename:std::size_t
+logger.cpp.i	build/src/Makefile	/^logger.cpp.i:$/;"	t
+logger.cpp.o	build/src/Makefile	/^logger.cpp.o:$/;"	t
+logger.cpp.s	build/src/Makefile	/^logger.cpp.s:$/;"	t
+logger.i	build/src/Makefile	/^logger.i: logger.cpp.i$/;"	t
+logger.o	build/src/Makefile	/^logger.o: logger.cpp.o$/;"	t
+logger.s	build/src/Makefile	/^logger.s: logger.cpp.s$/;"	t
+ltrim	src/utility.cpp	/^void utility::ltrim(std::string &s) {$/;"	f	class:utility	typeref:typename:void
+ltrim_copy	src/utility.cpp	/^std::string utility::ltrim_copy(std::string s) {$/;"	f	class:utility	typeref:typename:std::string
+main	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+main	build/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	typeref:typename:int
+main	build/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	typeref:typename:int
+main	src/main.cpp	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+main.cpp.i	build/src/Makefile	/^main.cpp.i:$/;"	t
+main.cpp.o	build/src/Makefile	/^main.cpp.o:$/;"	t
+main.cpp.s	build/src/Makefile	/^main.cpp.s:$/;"	t
+main.i	build/src/Makefile	/^main.i: main.cpp.i$/;"	t
+main.o	build/src/Makefile	/^main.o: main.cpp.o$/;"	t
+main.s	build/src/Makefile	/^main.s: main.cpp.s$/;"	t
+mainFunctionName_	src/parser_defs.hpp	/^  std::string mainFunctionName_{};$/;"	m	struct:MainSection	typeref:typename:std::string
+mainSec_	src/parser.hpp	/^  MainSection   mainSec_{};$/;"	m	struct:Parser	typeref:typename:MainSection
+name_	src/array.hpp	/^  std::string               name_{};$/;"	m	struct:Array	typeref:typename:std::string
+name_	src/function.hpp	/^  std::string     name_{};$/;"	m	struct:Function	typeref:typename:std::string
+name_	src/instruction.hpp	/^  std::string     name_{};$/;"	m	struct:Instruction	typeref:typename:std::string
+name_	src/label.hpp	/^  std::string       name_{};$/;"	m	struct:Label	typeref:typename:std::string
+name_	src/variable.hpp	/^  std::string name_{};$/;"	m	struct:Variable	typeref:typename:std::string
+opList_	src/instruction.hpp	/^  OpList          opList_;$/;"	m	struct:Instruction	typeref:typename:OpList
+opType_	src/operand.hpp	/^  OperandType opType_{OperandType::REG};$/;"	m	struct:Operand	typeref:typename:OperandType
+pLexer_	src/parser.hpp	/^  LexerPtr      pLexer_{nullptr};$/;"	m	struct:Parser	typeref:typename:LexerPtr
+parse	src/code_section_parser.cpp	/^CodeSection CodeSectionParser::parse(std::fstream &inputStream)$/;"	f	class:CodeSectionParser	typeref:typename:CodeSection
+parse	src/parser.cpp	/^void Parser::parse(const std::string& inputFilename)$/;"	f	class:Parser	typeref:typename:void
+parseArray	src/lexer.cpp	/^void Lexer::parseArray(DataSection& rDataSec, std::string line)$/;"	f	class:Lexer	typeref:typename:void
+parseCodeSection	src/lexer.cpp	/^CodeSection Lexer::parseCodeSection(std::fstream& inputStream)$/;"	f	class:Lexer	typeref:typename:CodeSection
+parseDataSection	src/lexer.cpp	/^DataSection Lexer::parseDataSection(std::fstream& inputStream)$/;"	f	class:Lexer	typeref:typename:DataSection
+parseFunctionBody	src/code_section_parser.cpp	/^void CodeSectionParser::parseFunctionBody(std::fstream& inputStream, Function& rFunc)$/;"	f	class:CodeSectionParser	typeref:typename:void
+parseMainFunction	src/lexer.cpp	/^void Lexer::parseMainFunction(MainSection& rMainSec)$/;"	f	class:Lexer	typeref:typename:void
+parseMainSection	src/lexer.cpp	/^MainSection Lexer::parseMainSection(std::fstream& inputStream)$/;"	f	class:Lexer	typeref:typename:MainSection
+parseStackSection	src/lexer.cpp	/^StackSection Lexer::parseStackSection(std::fstream& inputStream)$/;"	f	class:Lexer	typeref:typename:StackSection
+parseStackSize	src/lexer.cpp	/^bool Lexer::parseStackSize(StackSection& rStackSec, std::string line)$/;"	f	class:Lexer	typeref:typename:bool
+parseVariable	src/lexer.cpp	/^void Lexer::parseVariable(DataSection& rDataSec, std::string line)$/;"	f	class:Lexer	typeref:typename:void
+parser.cpp.i	build/src/Makefile	/^parser.cpp.i:$/;"	t
+parser.cpp.o	build/src/Makefile	/^parser.cpp.o:$/;"	t
+parser.cpp.s	build/src/Makefile	/^parser.cpp.s:$/;"	t
+parser.i	build/src/Makefile	/^parser.i: parser.cpp.i$/;"	t
+parser.o	build/src/Makefile	/^parser.o: parser.cpp.o$/;"	t
+parser.s	build/src/Makefile	/^parser.s: parser.cpp.s$/;"	t
+preinstall	build/Makefile	/^preinstall: all$/;"	t
+preinstall	build/src/Makefile	/^preinstall: all$/;"	t
+preinstall/fast	build/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	build/src/Makefile	/^preinstall\/fast:$/;"	t
+printArray	src/debug.hpp	/^inline void printArray(const Array& array)$/;"	f	typeref:typename:void
+printMessage	src/logger.cpp	/^void Logger::printMessage(const std::string& msg, LogLevel lvl)$/;"	f	class:Logger	typeref:typename:void
+printStackSection	src/debug.hpp	/^inline void printStackSection(const StackSection& stackSec)$/;"	f	typeref:typename:void
+printUsage	src/main.cpp	/^void printUsage()$/;"	f	typeref:typename:void
+printVariable	src/debug.hpp	/^inline void printVariable(const Variable& variable)$/;"	f	typeref:typename:void
+qnxnto	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	build/CMakeFiles/3.14.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+rebuild_cache	build/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	build/src/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache/fast	build/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	build/src/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+returnStringForType	src/parser.cpp	/^std::string Parser::returnStringForType(const ValueType type)$/;"	f	class:Parser	typeref:typename:std::string
+returnTypeForString	src/parser.cpp	/^ValueType Parser::returnTypeForString(const std::string& type)$/;"	f	class:Parser	typeref:typename:ValueType
+rtrim	src/utility.cpp	/^void utility::rtrim(std::string &s) {$/;"	f	class:utility	typeref:typename:void
+rtrim_copy	src/utility.cpp	/^std::string utility::rtrim_copy(std::string s) {$/;"	f	class:utility	typeref:typename:std::string
+setDefaultStackSize	src/lexer.cpp	/^void Lexer::setDefaultStackSize(StackSection& rStackSec)$/;"	f	class:Lexer	typeref:typename:void
+setLineNumber	src/code_section_parser.hpp	/^    void setLineNumber(int lineNumber) { lineNumber_ = lineNumber; }$/;"	f	class:CodeSectionParser	typeref:typename:void
+size_	src/array.hpp	/^  std::size_t               size_{};$/;"	m	struct:Array	typeref:typename:std::size_t
+size_	src/parser_defs.hpp	/^  std::size_t size_{};$/;"	m	struct:StackSection	typeref:typename:std::size_t
+src/CMakeFiles/czlp.dir/rule	build/src/Makefile	/^src\/CMakeFiles\/czlp.dir\/rule:$/;"	t
+stackSec_	src/parser.hpp	/^  StackSection  stackSec_{};$/;"	m	struct:Parser	typeref:typename:StackSection
+starts_with	src/utility.cpp	/^bool utility::starts_with(const std::string& line, const std::string& prefix)$/;"	f	class:utility	typeref:typename:bool
+staticTypeCheck	src/parser.cpp	/^bool Parser::staticTypeCheck(const DataSection& dataSec) const$/;"	f	class:Parser	typeref:typename:bool
+supportedInstructionsNames_	src/instruction_envirnoment.hpp	/^  std::set<ValueType> supportedInstructionsNames_{};$/;"	m	struct:InstructionEnvirnoment	typeref:typename:std::set<ValueType>
+tokenize	src/utility.cpp	/^void utility::tokenize(const std::string& str, std::vector<std::string>& tokens, const std::stri/;"	f	class:utility	typeref:typename:void
+trim	src/utility.cpp	/^void utility::trim(std::string &s) {$/;"	f	class:utility	typeref:typename:void
+trim_copy	src/utility.cpp	/^std::string utility::trim_copy(std::string s) {$/;"	f	class:utility	typeref:typename:std::string
+type_	src/array.hpp	/^  ValueType                 type_{};$/;"	m	struct:Array	typeref:typename:ValueType
+type_	src/instruction.hpp	/^  InstructionType type_{InstructionType::NOP};$/;"	m	struct:Instruction	typeref:typename:InstructionType
+type_	src/variable.hpp	/^  ValueType   type_{};$/;"	m	struct:Variable	typeref:typename:ValueType
+utility	src/utility.hpp	/^namespace utility {$/;"	n
+valueFromLexer_	src/array.hpp	/^  std::vector<std::string>  valueFromLexer_{};$/;"	m	struct:Array	typeref:typename:std::vector<std::string>
+valueFromLexer_	src/variable.hpp	/^  std::string valueFromLexer_{};$/;"	m	struct:Variable	typeref:typename:std::string
+valueSizeFromLexer_	src/array.hpp	/^  std::size_t               valueSizeFromLexer_{};$/;"	m	struct:Array	typeref:typename:std::size_t
+valueType_	src/operand.hpp	/^  ValueType   valueType_{ValueType::DWORD};$/;"	m	struct:Operand	typeref:typename:ValueType
+value_	src/array.hpp	/^  std::vector<QWORD>        value_{};$/;"	m	struct:Array	typeref:typename:std::vector<QWORD>
+value_	src/operand.hpp	/^  QWORD       value_{};$/;"	m	struct:Operand	typeref:typename:QWORD
+value_	src/variable.hpp	/^  QWORD       value_{};$/;"	m	struct:Variable	typeref:typename:QWORD
+variable.cpp.i	build/src/Makefile	/^variable.cpp.i:$/;"	t
+variable.cpp.o	build/src/Makefile	/^variable.cpp.o:$/;"	t
+variable.cpp.s	build/src/Makefile	/^variable.cpp.s:$/;"	t
+variable.i	build/src/Makefile	/^variable.i: variable.cpp.i$/;"	t
+variable.o	build/src/Makefile	/^variable.o: variable.cpp.o$/;"	t
+variable.s	build/src/Makefile	/^variable.s: variable.cpp.s$/;"	t
+variableExists	src/parser_defs.hpp	/^  bool variableExists(const std::string& name) {}$/;"	f	struct:DataSection	typeref:typename:bool
+variableMap_	src/parser_defs.hpp	/^  std::unordered_map<std::string, Variable> variableMap_;  $/;"	m	struct:DataSection	typeref:typename:std::unordered_map<std::string,Variable>
+virtual_machine	CMakeLists.txt	/^project(virtual_machine)$/;"	p
+virtual_machine	src/CMakeLists.txt	/^project(virtual_machine)$/;"	p
+vm.cpp.i	build/src/Makefile	/^vm.cpp.i:$/;"	t
+vm.cpp.o	build/src/Makefile	/^vm.cpp.o:$/;"	t
+vm.cpp.s	build/src/Makefile	/^vm.cpp.s:$/;"	t
+vm.i	build/src/Makefile	/^vm.i: vm.cpp.i$/;"	t
+vm.o	build/src/Makefile	/^vm.o: vm.cpp.o$/;"	t
+vm.s	build/src/Makefile	/^vm.s: vm.cpp.s$/;"	t
+volatile	build/CMakeFiles/3.14.4/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:

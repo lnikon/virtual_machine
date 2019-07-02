@@ -18,6 +18,7 @@ inline void printStackSection(const StackSection& stackSec)
   stackInfo += "Stack Size: " + std::to_string(stackSec.size_) + "\n";
 
   Logger::printMessage(stackInfo, LogLevel::DEBUG);
+  std::cout << std::endl;
 #endif
 }
 
@@ -26,7 +27,10 @@ inline void printArray(const Array& array)
 {
 #ifdef DEBUG_MODE
   const std::string prefix = "\n<ArrayInfo: ";
-  const std::string padding = std::string('-', prefix.size());
+
+  std::string padding = std::string(prefix.size(), '-');
+  padding += "> ";
+
   const std::string postfix = "\nEND ArrayInfo>";
 
   std::string arrayInfo;
@@ -64,6 +68,7 @@ inline void printArray(const Array& array)
     + postfix;
 
   Logger::printMessage(arrayInfo, LogLevel::DEBUG);
+  std::cout << std::endl;
 #endif
 }
 
@@ -71,7 +76,10 @@ inline void printVariable(const Variable& variable)
 {
 #ifdef DEBUG_MODE
   const std::string prefix = "\n<VariableInfo: ";
-  const std::string padding = std::string('-', prefix.size());
+
+  std::string padding = std::string(prefix.size(), '-');
+  padding += "> ";
+
   const std::string postfix = "\nEND VariableInfo>";
 
   std::string variableInfo;
@@ -104,5 +112,6 @@ inline void printVariable(const Variable& variable)
     + postfix;
 
   Logger::printMessage(variableInfo, LogLevel::DEBUG);
+  std::cout << std::endl;
 #endif
 }
