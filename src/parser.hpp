@@ -38,12 +38,6 @@ struct Parser
    */
 
   /*
-   * Check StackSection semantics
-   */
-  bool checkStackSection(const StackSection& stackSec)  const;
-  bool checkStackSize(const std::size_t stackSize)      const;
-
-  /*
    * Check DataSection semantics
    */
   bool checkDataSection(const DataSection& dataSec)       const;

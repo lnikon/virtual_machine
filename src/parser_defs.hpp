@@ -24,12 +24,12 @@ struct StackSection
 struct DataSection
 {
   void insertVariable(const std::string& name, const Variable& var) {}
-  const Variable& getVariable(const std::string& name) {}
-  bool variableExists(const std::string& name) {}
+  const Variable& getVariable(const std::string& name) { }
+  bool variableExists(const std::string& name) {return false;}
 
   void insertArray(const std::string& name, const Array& var) {}
-  const Array& getArray(const std::string& name) {}
-  bool arrayExists(const std::string& name) {}
+  const Array& getArray(const std::string& name) { }
+  bool arrayExists(const std::string& name) { return false; }
 
   std::vector<Variable> getVariablesVector() const 
   {
@@ -55,8 +55,7 @@ struct DataSection
     return arrs;
   }
 
-  private:
-  std::unordered_map<std::string, Variable> variableMap_;  
+  private: std::unordered_map<std::string, Variable> variableMap_;  
   std::unordered_map<std::string, Array>    arrayMap_;  
 };
 
@@ -68,9 +67,9 @@ struct CodeSection
   FunctionList code_{};
 
   void insertFunction(const Function& function) {}
-  bool isForwardDeclared(const std::string& name) {}
-  bool functionExists(const std::string& name) {}
-  bool functionExists(const Function& name) {}
+  bool isForwardDeclared(const std::string& name) { return false; }
+  bool functionExists(const std::string& name) { return false; }
+  bool functionExists(const Function& name) { return false; }
 };
 
 struct MainSection

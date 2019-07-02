@@ -15,10 +15,6 @@ class CodeSectionParser
 
   private:
     /*
-     * Properties
-     */
-
-    /*
      * Current line number in source file
      */
     int lineNumber_{0};
